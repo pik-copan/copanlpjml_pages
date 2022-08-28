@@ -1,0 +1,43 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+  - name: All
+    filter: "all"
+  - name: Core
+    filter: "core"
+  - name: Visual
+    filter: "visual"
+  - name: Data
+    filter: "data"
+
+# your projects
+projects:
+  - name: FINAM core
+    logo: /images/logo.png
+    repo: https://git.ufz.de/FINAM/finam # If your project is a public repo on GitHub, then provide this link. it will show star count.
+    #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+    summary: The FINAM core framework and basic tools
+    tags: ["core"]
+
+  - name: FINAM graphs
+    logo: /images/logo.png
+    repo: https://git.ufz.de/FINAM/finam-graph # If your project is a public repo on GitHub, then provide this link. it will show star count.
+    #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+    summary: A tool for visualizing FINAM model linkage setups
+    tags: ["visual"]
+
+  - name: FINAM NetCDF IO
+    logo: /images/logo.png
+    repo: https://git.ufz.de/FINAM/finam-netcdf # If your project is a public repo on GitHub, then provide this link. it will show star count.
+    #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+    summary: NetCDF file I/O components for FINAM
+    tags: [ "data" ]

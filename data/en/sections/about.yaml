@@ -1,0 +1,25 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: FINAM model coupling framework
+
+# a summary about you
+summary: 'A lighweight, easy to use model coupling framework. Written in Python, it can be used to link models written virtually every language'
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "finam@ufz.de"
+
+  - name: GitLab
+    icon: "fab fa-gitlab"
+    url: "https://git.ufz.de/FINAM"

@@ -1,0 +1,22 @@
+image: klakegg/hugo:ext-alpine-ci
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+test:
+  script:
+    - hugo
+  artifacts:
+    paths:
+      - public
+  except:
+    - main
+
+pages:
+  script:
+    - hugo
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

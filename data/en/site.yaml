@@ -1,0 +1,32 @@
+# Copyright Notice
+copyright: © 2022 Copyright.
+
+# A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `config.yaml` file.
+disclaimer: "Disclaimer..."
+
+# Meta description for your site.  This will help the search engines to find your site.
+description: Website of the FINAM model coupling framework.
+
+# specify the list of custom menus that you want to show in the top navbar.
+# they will be separated by a divider from the main menus.
+customMenus:
+- name: User guide
+  url: https://finam.pages.ufz.de/finam-book/
+  hideFromNavbar: false
+  showOnFooter: true
+- name: API docs
+  url: https://finam.pages.ufz.de/finam/
+  hideFromNavbar: false
+  showOnFooter: true
+- name: GitLab
+  url: https://git.ufz.de/FINAM
+  hideFromNavbar: false
+  showOnFooter: true
+
+# Specify OpenGraph Headers
+openGraph:
+  title: FINAM website
+  type: website
+  description: Website of the FINAM model coupling framework
+  image: images/logo.png
+  url: https://hugo-toha.github.io

@@ -35,7 +35,7 @@ projects:
     summary: A tool for visualizing FINAM model linkage setups
     tags: ["visual"]
 
-  - name: FINAM NetCDF IO
+  - name: FINAM NetCDF I/O
     logo: /images/logo.svg
     repo: https://git.ufz.de/FINAM/finam-netcdf # If your project is a public repo on GitHub, then provide this link. it will show star count.
     #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.

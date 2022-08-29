@@ -1,0 +1,17 @@
+
+.circle {
+    background-color: #005aa0 !important;
+}
+
+.timeline .horizontal-line hr {
+    border-color: #005aa0 !important;
+}
+.timeline .horizontal-line .corner {
+    border-color: #005aa0 !important;
+}
+.timeline .vertical-line::after {
+    border-color: #005aa0 !important;
+}
+.btn-info {
+    background-color: #005aa0 !important;
+}

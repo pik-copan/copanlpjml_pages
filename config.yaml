@@ -34,9 +34,9 @@ enableEmoji: true
 # Site parameters
 params:
   logo:
-    main: /images/logo.png
-    inverted: /images/logo.png
-    favicon: /images/logo.png
+    main: /images/logo.svg
+    inverted: /images/logo.svg
+    favicon: /images/logo.svg
 
   # GitHub repo URL and branch of your site
   gitRepo: https://git.ufz.de/FINAM/finam.pages.ufz.de

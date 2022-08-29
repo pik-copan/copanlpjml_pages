@@ -11,7 +11,10 @@ section:
 designation: FINAM model coupling framework
 
 # a summary about you
-summary: 'A lighweight, easy to use model coupling framework. Written in Python, it can be used to link models written virtually every language'
+summary: "A lighweight, easy to use model coupling framework.
+Written in Python, it can be used to link models written virtually every language
+\n\n
+FINAM has a particular focus on ease of use, and on making it possible to link existing models with as few programming work as possible."
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

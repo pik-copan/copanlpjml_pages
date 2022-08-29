@@ -1,0 +1,9 @@
+<div class="col-10 col-lg-8">
+  <div class="experience-entry-heading">
+    {{ $feature:= index .positions 0 }}
+    <!-- For single position, give emphasis on the designation-->
+    <h5>{{ $feature.name }}</h5>
+  </div>
+  <!-- Add feature overview -->
+  {{ $feature.content | markdownify }}
+</div>

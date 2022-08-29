@@ -1,7 +1,7 @@
 # some information about the subject
 name: "FINAM"
 nickname: "FINAM -- model coupling framework"
-image: "images/logo.png"
+image: "images/logo.svg"
 
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: ""

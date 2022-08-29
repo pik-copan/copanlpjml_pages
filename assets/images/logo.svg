@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg8" width="256" height="256" version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <g id="layer1" transform="translate(-72,-72)">
+    <path id="rect1095-4-9-3-1-6-2-58-1-5-4-0" d="m129.85 296 13.771-40h88.375v40z" fill="#ffa600" stop-color="#000000" style="font-variation-settings:normal"/>
+    <path id="rect1095-4-9-8-7-5-7-65-5-7-8-8-1-6" d="m163 200 13.875-40h99.125v40z" fill="#ffa600" stop-color="#000000" style="font-variation-settings:normal"/>
+    <g id="g8" fill="#005aa0">
+      <path id="rect1095-8-5-97-1-3-4-5-0" d="m126.1 160 11.27-27.719-8-20.281h54.625l-72 208h-8v-160z" stop-color="#000000" style="font-variation-settings:normal"/>
+      <path id="rect1095-4-9-3-1-6-2-58-1-5-4" d="m270.15 112-13.771 40h-88.375v-40z" stop-color="#000000" style="font-variation-settings:normal"/>
+      <path id="rect1095-4-9-8-7-5-7-65-5-7-8-8-1" d="m237 208-13.875 40h-99.125v-40z" stop-color="#000000" style="font-variation-settings:normal"/>
+      <path id="rect1095-4-9-3-1-6-2-5-5-97-3-3" d="m120 112 8 20.281-8 19.719h-24l-8-40z" stop-color="#000000" style="font-variation-settings:normal"/>
+    </g>
+    <path id="rect1095-8-5-97-1-3-7-6-1-0" d="m273.9 248-11.27 27.719 8 20.281h-54.625l72-208h8v160z" fill="#ffa600" stop-color="#000000" style="font-variation-settings:normal"/>
+    <path id="rect1095-4-9-3-1-6-2-5-5-9-7-6-2" d="m280 296-8-20.281 8-19.719h24l8 40z" fill="#ffa600" stop-color="#000000" style="font-variation-settings:normal"/>
+  </g>
+</svg>

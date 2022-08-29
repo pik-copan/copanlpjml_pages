@@ -12,16 +12,17 @@ section:
 features:
   - positions:
       - name: Flexible, component-based model coupling
-        content: "Exchange any data, between models in an language."
+        content: "Exchange any data between models in any language.
+                  Component-based coupling warrants high modularity and code-driven introspection of coupling setups."
   - positions:
       - name: Lighweight Python framework
         content: "Use the power and convenience of Python to wrap you models, write adapters, and set up model linkage."
   - positions:
       - name: Minimal, unified component interface
-        content: "test 1 2 3 4"
+        content: "Wrapping existing models is easy! Write python bindings for initialization and step functionality, and implement the straight-forward FINAM interface."
   - positions:
       - name: Bi-directional and circular coupling
-        content: "test 1 2 3 4"
+        content: "FINAM's scheduling algorithm allows for bi-directional and circular coupling setups."
   - positions:
-      - name: Bi-directional and circular coupling
-        content: "test 1 2 3 4"
+      - name: Model coupling at initialization
+        content: "Due to FINAM's unique iterative initialization approach, models can depend on inputs from other models already during initialization."

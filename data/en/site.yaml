@@ -14,14 +14,17 @@ customMenus:
   url: https://finam.pages.ufz.de/finam-book/
   hideFromNavbar: false
   showOnFooter: true
+  target: _blank
 - name: API docs
   url: https://finam.pages.ufz.de/finam/
   hideFromNavbar: false
   showOnFooter: true
+  target: _blank
 - name: GitLab
   url: https://git.ufz.de/FINAM
   hideFromNavbar: false
   showOnFooter: true
+  target: _blank
 
 # Specify OpenGraph Headers
 openGraph:

@@ -15,3 +15,8 @@
 .btn-info {
     background-color: #005aa0 !important;
 }
+
+pre > code {
+    display: block !important;
+    padding: .5em !important;
+}

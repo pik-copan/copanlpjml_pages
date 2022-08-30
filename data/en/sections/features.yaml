@@ -12,17 +12,37 @@ section:
 features:
   - positions:
       - name: Flexible, component-based model coupling
-        content: "Exchange any data between models in any language.
-                  Component-based coupling warrants high modularity and code-driven introspection of coupling setups."
+        content_left: |
+          Exchange any data between models in any language.
+          Component-based coupling warrants high modularity and code-driven introspection of coupling setups.
+        content_right: |
+          [IMAGE COUPLING]
   - positions:
       - name: Lighweight Python framework
-        content: "Use the power and convenience of Python to wrap you models, write adapters, and set up model linkage."
+        content_left: |
+          Use the power and convenience of Python to wrap you models, write adapters, and set up model linkage.
+        content_right: |
+          ```python
+          def x():
+              pass
+          ```
   - positions:
       - name: Minimal, unified component interface
-        content: "Wrapping existing models is easy! Write python bindings for initialization and step functionality, and implement the straight-forward FINAM interface."
+        content_left: |
+          Wrapping existing models is easy! Write python bindings for initialization and step functionality,
+          and implement the straight-forward FINAM interface.
+        content_right: |
+          [PYTHON CODE BLOCK]
   - positions:
       - name: Bi-directional and circular coupling
-        content: "FINAM's scheduling algorithm allows for bi-directional and circular coupling setups."
+        content_left: |
+          FINAM's scheduling algorithm allows for bi-directional and circular coupling setups.
+        content_right: |
+          [IMAGE BI-DIR COUPLING]
   - positions:
       - name: Model coupling at initialization
-        content: "Due to FINAM's unique iterative initialization approach, models can depend on inputs from other models already during initialization."
+        content_left: |
+          Due to FINAM's unique iterative initialization approach,
+          models can depend on inputs from other models already during initialization.
+        content_right: |
+          [IMAGE???]

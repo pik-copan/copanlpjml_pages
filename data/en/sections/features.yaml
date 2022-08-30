@@ -11,25 +11,28 @@ section:
 # Your experiences
 features:
   - positions:
-      - name: Flexible, component-based model coupling
-        content_left: |
-          Exchange any data between models in any language.
-          Component-based coupling warrants high modularity and code-driven introspection of coupling setups.
-        content_right: |
-          [IMAGE COUPLING]
-  - positions:
-      - name: Lighweight Python framework
+      - name: Written in Python, for any language
         content_left: |
           Use the power and convenience of Python to wrap you models, write adapters, and set up model linkage.
+
+          Benefit from Python as glue code to couple models from different programming languages.
+          Exchange any data between models in any language!
         content_right: |
+          <img src="/images/python-logo-generic.svg" />
+
           ```python
           (
-              model_a
+              cpp_model
               >> TimeInterpolation()
-              >> Regridding()
-              >> model_b
+              >> fortran_model
           )
           ```
+  - positions:
+      - name: Flexible, component-based model coupling
+        content_left: |
+          Component-based coupling warrants high modularity and easy code-driven introspection of coupling setups.
+        content_right: |
+          [IMAGE COUPLING]
   - positions:
       - name: Minimal, unified component interface
         content_left: |
@@ -48,7 +51,9 @@ features:
   - positions:
       - name: Minimal-effort adapters
         content_left: |
-          Adapters are used for data transformations between components. Examples are regridding, unit conversions or temporal interpolation.
+          Adapters are used for data transformations between components.
+          Examples are regridding, unit conversions or temporal interpolation.
+          FINAM's adapter interface is simple and easy to implement.
         content_right: |
           ```python
           class ScaleAdapter(AAdapter):

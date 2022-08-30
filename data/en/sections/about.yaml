@@ -8,13 +8,26 @@ section:
   template: sections/about.html
 
 # your designation
-designation: FINAM model coupling framework
+designation: A lightweight model coupling framework in Python
 
 # a summary about you
-summary: "A lighweight, easy to use model coupling framework.
-Written in Python, it can be used to link models written virtually every language
-\n\n
-FINAM has a particular focus on ease of use, and on making it possible to link existing models with as few programming work as possible."
+summary: |
+  <img width="400" style="float: right; margin-left: 15px;" src="/images/logo_large.svg"/>
+
+  FINAM is a lighweight, easy to use model coupling framework.
+  Written in Python, it can be used to link models written virtually every language.
+
+  We put a particular focus on ease of use, and on making it possible to
+  link existing models with as few programming work as possible.
+
+  FINAM is open source software under the LGPL3 license.
+
+  FINAM is developed at the
+  <a href="https://www.ufz.de/" target="_blank">Helmholtz Centre for Environmental Research -- UFZ</a>,
+  research unit
+  <a href="https://www.ufz.de/index.php?en=43277" target="_blank">Smart Models / Monitoring</a>
+  in the <a href="https://www.ufz.de/index.php?en=49088" target="_blank">LandTrans project</a>.
+  <br style="clear: both;"/>
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

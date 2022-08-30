@@ -12,17 +12,66 @@ section:
 features:
   - positions:
       - name: Flexible, component-based model coupling
-        content: "Exchange any data between models in any language.
-                  Component-based coupling warrants high modularity and code-driven introspection of coupling setups."
+        content_left: |
+          Exchange any data between models in any language.
+          Component-based coupling warrants high modularity and code-driven introspection of coupling setups.
+        content_right: |
+          [IMAGE COUPLING]
   - positions:
       - name: Lighweight Python framework
-        content: "Use the power and convenience of Python to wrap you models, write adapters, and set up model linkage."
+        content_left: |
+          Use the power and convenience of Python to wrap you models, write adapters, and set up model linkage.
+        content_right: |
+          ```python
+          (
+              model_a
+              >> TimeInterpolation()
+              >> Regridding()
+              >> model_b
+          )
+          ```
   - positions:
       - name: Minimal, unified component interface
-        content: "Wrapping existing models is easy! Write python bindings for initialization and step functionality, and implement the straight-forward FINAM interface."
+        content_left: |
+          Wrapping existing models is easy! Write python bindings for initialization and step functionality,
+          and implement the straight-forward FINAM interface.
+        content_right: |
+          ```python
+          class MyComponent(ATimeComponent):
+              def __init__(self, ...)
+              def initialize(self)
+              def connect(self)
+              def validate(self)
+              def update(self)
+              def finalize(self):
+          ```
+  - positions:
+      - name: Minimal-effort adapters
+        content_left: |
+          Adapters are used for data transformations between components. Examples are regridding, unit conversions or temporal interpolation.
+        content_right: |
+          ```python
+          class ScaleAdapter(AAdapter):
+              def __init__(self, scale):
+                  super().__init__()
+                  self.scale = scale
+              def get_data(self):
+                  d = self.pull_data(time)
+                  return d * self.scale
+          ```
   - positions:
       - name: Bi-directional and circular coupling
-        content: "FINAM's scheduling algorithm allows for bi-directional and circular coupling setups."
+        content_left: |
+          FINAM's scheduling algorithm allows for bi-directional and circular coupling setups.
+        content_right: |
+          ```python
+          model_a >> model_b
+          model_b >> model_a
+          ```
   - positions:
       - name: Model coupling at initialization
-        content: "Due to FINAM's unique iterative initialization approach, models can depend on inputs from other models already during initialization."
+        content_left: |
+          Due to FINAM's unique iterative initialization approach,
+          models can depend on inputs from other models already during initialization.
+        content_right: |
+          [IMAGE???]

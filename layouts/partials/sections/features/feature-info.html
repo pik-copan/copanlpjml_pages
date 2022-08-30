@@ -5,5 +5,17 @@
     <h5>{{ $feature.name }}</h5>
   </div>
   <!-- Add feature overview -->
-  {{ $feature.content | markdownify }}
+  {{ if $feature.content }}
+    {{ $feature.content | markdownify }}
+  {{ end }}
+  {{ if or ($feature.content_left) ($feature.content_right) }}
+      <div class="row">
+        <div class="col-lg-6">
+          {{ $feature.content_left | markdownify }}
+        </div>
+        <div class="col-lg-6">
+          {{ $feature.content_right | markdownify }}
+        </div>
+      </div>
+  {{ end }}
 </div>

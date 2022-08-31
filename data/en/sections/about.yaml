@@ -12,7 +12,8 @@ designation: A lightweight model coupling framework in Python
 
 # a summary about you
 summary: |
-  <img width="400" style="float: right; margin-left: 15px;" src="/images/logo_large.svg"/>
+  <div class="row">
+    <div class="col-lg-6">
 
   FINAM is a lighweight, easy to use model coupling framework.
   Written in Python, it can be used to link models written in virtually any language.
@@ -21,13 +22,31 @@ summary: |
   link existing models with as few programming work as possible.
 
   FINAM is open source software under the LGPL3 license.
-
+    </div>
+    <div class="col-lg-6">
+  <img width="100%" src="/images/logo_large.svg"/>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-lg-6">
   FINAM is developed at the
   <a href="https://www.ufz.de/" target="_blank">Helmholtz Centre for Environmental Research -- UFZ</a>,
   research unit
   <a href="https://www.ufz.de/index.php?en=43277" target="_blank">Smart Models / Monitoring</a>
   in the <a href="https://www.ufz.de/index.php?en=49088" target="_blank">LandTrans project</a>.
-  <br style="clear: both;"/>
+    </div>
+    <div class="col-lg-6">
+      <a href="https://www.ufz.de/" target="_blank" title="UFZ">
+        <img width="79%" src="/images/UFZ_Logo_EN.svg"/>
+      </a>
+      <a href="https://www.ufz.de/index.php?en=43277" target="_blank" title="RU Smart Models / Monitoring">
+        <div style="width: 20%; float: right;">
+          <img width="100%" src="/images/ModMon_Logo.svg"/>
+          <diy style="width: 100%; display: block; text-align: center; color: #ffa600">ModMon</div>
+        </div>
+      </a>
+  </div>
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

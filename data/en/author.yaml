@@ -9,6 +9,10 @@ greeting: ""
 # give your contact information. they will be used in the footer
 contactInfo:
   email: finam@ufz.de
+  gitlab: |
+    <a href="https://git.ufz.de/finam" target="_blank" rel="noopener">
+    <span><i class="fab fa-gitlab"></i></span> <span>git.ufz.de/FINAM</span>
+    </a>
 
 # a summary of what it does
 summary:

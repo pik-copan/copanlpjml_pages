@@ -15,9 +15,9 @@ summary: |
   <img width="400" style="float: right; margin-left: 15px;" src="/images/logo_large.svg"/>
 
   FINAM is a lighweight, easy to use model coupling framework.
-  Written in Python, it can be used to link models written virtually every language.
+  Written in Python, it can be used to link models written in virtually any language.
 
-  We put a particular focus on ease of use, and on making it possible to
+  We put particular focus on ease of use, and on making it possible to
   link existing models with as few programming work as possible.
 
   FINAM is open source software under the LGPL3 license.

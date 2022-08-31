@@ -46,7 +46,7 @@ features:
               def connect(self)
               def validate(self)
               def update(self)
-              def finalize(self):
+              def finalize(self)
           ```
   - positions:
       - name: Minimal-effort adapters
@@ -74,9 +74,12 @@ features:
           model_b >> model_a
           ```
   - positions:
-      - name: Model coupling at initialization
+      - name: Spatio-temporal data types
         content_left: |
-          Due to FINAM's unique iterative initialization approach,
-          models can depend on inputs from other models already during initialization.
+          FINAM is primarily designed for linking environmental models for different domains,
+          like hydrosphere, pedosphere and biosphere.
+
+          For fast development, FINAM provides built-in support for a variety of spatial and spatio-temporal data types.
+          But still, any data types can be exchanged.
         content_right: |
           [IMAGE???]

@@ -22,9 +22,9 @@ features:
 
           ```python
           (
-              cpp_model
-              >> TimeInterpolation()
-              >> fortran_model
+              cpp_model.outputs["precip"]
+              >> TimeIntegration()
+              >> fortran_model.inputs["precip"]
           )
           ```
   - positions:
@@ -60,7 +60,7 @@ features:
               def __init__(self, scale):
                   super().__init__()
                   self.scale = scale
-              def get_data(self):
+              def get_data(self, time):
                   d = self.pull_data(time)
                   return d * self.scale
           ```
@@ -69,10 +69,7 @@ features:
         content_left: |
           FINAM's scheduling algorithm allows for bi-directional and circular coupling setups.
         content_right: |
-          ```python
-          model_a >> model_b
-          model_b >> model_a
-          ```
+          [IMAGE BIDIR COUPLING]
   - positions:
       - name: Spatio-temporal data types
         content_left: |

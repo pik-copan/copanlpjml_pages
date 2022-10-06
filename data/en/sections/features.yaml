@@ -36,7 +36,7 @@ features:
   - positions:
       - name: Minimal, unified component interface
         content_left: |
-          Wrapping existing models is easy! Write python bindings for initialization and step functionality,
+          Wrapping existing models is easy! Write Python bindings for initialization and step functionality,
           and implement the straight-forward FINAM interface.
         content_right: |
           ```python
@@ -67,7 +67,8 @@ features:
   - positions:
       - name: Bi-directional and circular coupling
         content_left: |
-          FINAM's scheduling algorithm allows for bi-directional and circular coupling setups.
+          FINAM's scheduling algorithm allows for bi-directional and circular coupling setups,
+          as well as fully flexible and even varying model time steps.
         content_right: |
           [IMAGE BIDIR COUPLING]
   - positions:
@@ -77,6 +78,8 @@ features:
           like hydrosphere, pedosphere and biosphere.
 
           For fast development, FINAM provides built-in support for a variety of spatial and spatio-temporal data types.
+          It supports `xarray` for structured and unstructured spatial data, and `pint` for units handling.
+
           But still, any data types can be exchanged.
         content_right: |
           [IMAGE???]

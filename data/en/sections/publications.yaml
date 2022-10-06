@@ -9,25 +9,25 @@ section:
   # hideTitle: true
 
 # filter buttons
-buttons:
-  - name: All
-    filter: "all"
-  - name: "Model coupling"
-    filter: "model-coupling"
-  - name: "Framework"
-    filter: "framework"
+#buttons:
+#  - name: All
+#    filter: "all"
+#  - name: "Model coupling"
+#    filter: "model-coupling"
+#  - name: "Framework"
+#    filter: "framework"
 
 # your publications
 publications:
-  - title: A technical paper about FINAM
+  - title: Coming soon...
     publishedIn:
-      name: Environmental Modelling and Software
-      date: 31 December 2022
-      url: https://example.com
+      name: #Environmental Modelling and Software
+      date: #31 December 2022
+      url: #https://example.com
     authors:
-      - name: Team LandTech
+      - name: #Team LandTech
     paper:
-      summary: Abstract of the paper...
-      url: https://example.com
-    categories: ["framework"]
-    tags: ["FINAM", "technical", "design"]
+      summary: #Abstract of the paper...
+      url: #https://example.com
+    categories: #["framework"]
+    tags: #["FINAM", "technical", "design"]

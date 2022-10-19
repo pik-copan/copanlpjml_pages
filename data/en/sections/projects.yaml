@@ -18,26 +18,37 @@ buttons:
     filter: "visual"
   - name: Data
     filter: "data"
+  - name: Docs
+    filter: "docs"
 
 # your projects
 projects:
   - name: FINAM core
     logo: /images/logo.svg
-    repo: https://git.ufz.de/FINAM/finam # If your project is a public repo on GitHub, then provide this link. it will show star count.
-    #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+    repo: https://git.ufz.de/FINAM/finam
     summary: The FINAM core framework and basic tools
     tags: ["core"]
 
   - name: FINAM graphs
     logo: /images/logo.svg
-    repo: https://git.ufz.de/FINAM/finam-graph # If your project is a public repo on GitHub, then provide this link. it will show star count.
-    #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+    repo: https://git.ufz.de/FINAM/finam-graph
     summary: A tool for visualizing FINAM model linkage setups
+    tags: ["visual"]
+
+  - name: FINAM plot
+    logo: /images/logo.svg
+    repo: https://git.ufz.de/FINAM/finam-plot
+    summary: Live visualization components for spatial data
     tags: ["visual"]
 
   - name: FINAM NetCDF I/O
     logo: /images/logo.svg
-    repo: https://git.ufz.de/FINAM/finam-netcdf # If your project is a public repo on GitHub, then provide this link. it will show star count.
-    #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+    repo: https://git.ufz.de/FINAM/finam-netcdf
     summary: NetCDF file I/O components for FINAM
     tags: [ "data" ]
+
+  - name: FINAM book
+    logo: /images/logo.svg
+    repo: https://finam.pages.ufz.de/finam-book/
+    summary: FINAM's user and developer guide
+    tags: ["docs"]

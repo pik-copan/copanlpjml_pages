@@ -32,7 +32,7 @@ features:
         content_left: |
           Component-based coupling warrants high modularity and easy code-driven introspection of coupling setups.
         content_right: |
-          [IMAGE COUPLING]
+          <img src="/images/coupling.svg" />
   - positions:
       - name: Minimal, unified component interface
         content_left: |
@@ -70,7 +70,7 @@ features:
           FINAM's scheduling algorithm allows for bi-directional and circular coupling setups,
           as well as fully flexible and even varying model time steps.
         content_right: |
-          [IMAGE BIDIR COUPLING]
+          <img src="/images/scheduling.svg" />
   - positions:
       - name: Spatio-temporal data types
         content_left: |
@@ -78,8 +78,7 @@ features:
           like hydrosphere, pedosphere and biosphere.
 
           For fast development, FINAM provides built-in support for a variety of spatial and spatio-temporal data types.
-          It supports `xarray` for structured and unstructured spatial data, and `pint` for units handling.
-
-          But still, any data types can be exchanged.
+          It uses `xarray` for structured and unstructured spatial data, and `pint` for units handling.
         content_right: |
-          [IMAGE???]
+          <img src="/images/dataset-diagram-logo.png" />
+

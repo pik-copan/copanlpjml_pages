@@ -40,7 +40,7 @@ features:
           and implement the straight-forward FINAM interface.
         content_right: |
           ```python
-          class MyComponent(ATimeComponent):
+          class MyComponent(TimeComponent):
               def __init__(self, ...)
               def initialize(self)
               def connect(self)
@@ -56,7 +56,7 @@ features:
           FINAM's adapter interface is simple and easy to implement.
         content_right: |
           ```python
-          class ScaleAdapter(AAdapter):
+          class ScaleAdapter(Adapter):
               def __init__(self, scale):
                   super().__init__()
                   self.scale = scale

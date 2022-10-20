@@ -16,6 +16,10 @@
     background-color: #005aa0 !important;
 }
 
+div.col-lg-6 {
+    margin-bottom: 0.5em !important;
+}
+
 pre > code {
     display: block !important;
     padding: .5em !important;

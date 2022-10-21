@@ -30,14 +30,20 @@ features:
   - positions:
       - name: Flexible, component-based model coupling
         content_left: |
-          Component-based coupling warrants high modularity and easy code-driven introspection of coupling setups.
+          A component-based coupling approach warrants high modularity and independence of linked components.
+
+          Models are wrapped into a unified interface, and communicate through adapters.
         content_right: |
           <img src="/images/coupling.svg" />
   - positions:
       - name: Minimal, unified component interface
         content_left: |
-          Wrapping existing models is easy! Write Python bindings for initialization and step functionality,
+          Wrapping existing models is easy!
+
+          Write Python bindings for initialization and step functionality,
           and implement the straight-forward FINAM interface.
+
+          A fully functional component can have less than 50 lines of code!
         content_right: |
           ```python
           class MyComponent(TimeComponent):
@@ -52,7 +58,8 @@ features:
       - name: Minimal-effort adapters
         content_left: |
           Adapters are used for data transformations between components.
-          Examples are regridding, unit conversions or temporal interpolation.
+          Examples are regridding, CRS transformations or temporal interpolation.
+
           FINAM's adapter interface is simple and easy to implement.
         content_right: |
           ```python
@@ -74,11 +81,10 @@ features:
   - positions:
       - name: Spatio-temporal data types
         content_left: |
-          FINAM is primarily designed for linking environmental models for different domains,
-          like hydrosphere, pedosphere and biosphere.
+          For structured and unstructured spatio-temporal data, FINAM uses [`xarray`](https://xarray.dev/).
+          All data has physical units, using [`pint`](https://pint.readthedocs.io/en/stable/).
 
-          For fast development, FINAM provides built-in support for a variety of spatial and spatio-temporal data types.
-          It uses `xarray` for structured and unstructured spatial data, and `pint` for units handling.
+          Metadata is used for automatic consistency checks, and follows the CF Conventions.
         content_right: |
           <img src="/images/dataset-diagram-logo.png" />
 

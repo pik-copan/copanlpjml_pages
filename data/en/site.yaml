@@ -10,12 +10,7 @@ description: Website of the FINAM model coupling framework.
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
 customMenus:
-- name: User guide
-  url: https://finam.pages.ufz.de/finam-book/
-  hideFromNavbar: false
-  showOnFooter: true
-  target: _blank
-- name: API docs
+- name: Documentation
   url: https://finam.pages.ufz.de/finam/
   hideFromNavbar: false
   showOnFooter: true

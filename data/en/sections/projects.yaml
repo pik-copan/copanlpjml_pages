@@ -29,6 +29,18 @@ projects:
     summary: The FINAM core framework and basic tools
     tags: ["core"]
 
+  - name: FINAM documentation
+    logo: /images/logo.svg
+    repo: https://finam.pages.ufz.de/finam/
+    summary: FINAM's extensive documentation with user and developer guide
+    tags: ["docs"]
+
+  - name: FINAM NetCDF I/O
+    logo: /images/logo.svg
+    repo: https://git.ufz.de/FINAM/finam-netcdf
+    summary: NetCDF file I/O components for FINAM
+    tags: [ "data" ]
+
   - name: FINAM graphs
     logo: /images/logo.svg
     repo: https://git.ufz.de/FINAM/finam-graph
@@ -40,15 +52,3 @@ projects:
     repo: https://git.ufz.de/FINAM/finam-plot
     summary: Live visualization components for spatial data
     tags: ["visual"]
-
-  - name: FINAM NetCDF I/O
-    logo: /images/logo.svg
-    repo: https://git.ufz.de/FINAM/finam-netcdf
-    summary: NetCDF file I/O components for FINAM
-    tags: [ "data" ]
-
-  - name: FINAM book
-    logo: /images/logo.svg
-    repo: https://finam.pages.ufz.de/finam-book/
-    summary: FINAM's user and developer guide
-    tags: ["docs"]

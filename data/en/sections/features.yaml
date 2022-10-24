@@ -23,7 +23,8 @@ features:
           ```python
           (
               cpp_model.outputs["precip"]
-              >> TimeIntegration()
+              >> RegridLinear()
+              >> IntegrateTime()
               >> fortran_model.inputs["precip"]
           )
           ```

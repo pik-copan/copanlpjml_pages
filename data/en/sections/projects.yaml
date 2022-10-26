@@ -49,6 +49,6 @@ projects:
 
   - name: FINAM plot
     logo: /images/logo.svg
-    repo: https://git.ufz.de/FINAM/finam-plot
+    repo: https://finam.pages.ufz.de/finam-plot/
     summary: Live visualization components for spatial data
     tags: ["visual"]

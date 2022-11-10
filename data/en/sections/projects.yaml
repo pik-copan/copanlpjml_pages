@@ -37,7 +37,7 @@ projects:
 
   - name: FINAM NetCDF I/O
     logo: /images/logo.svg
-    repo: https://git.ufz.de/FINAM/finam-netcdf
+    repo: https://finam.pages.ufz.de/finam-netcdf/
     summary: NetCDF file I/O components for FINAM
     tags: [ "data" ]
 

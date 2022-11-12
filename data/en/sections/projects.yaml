@@ -52,3 +52,9 @@ projects:
     repo: https://finam.pages.ufz.de/finam-plot/
     summary: Live visualization components for spatial data
     tags: ["visual"]
+
+  - name: FINAM regrid
+    logo: /images/logo.svg
+    repo: https://finam.pages.ufz.de/finam-regrid/
+    summary: Advanced regridding adapter for FINAM, using [ESMPy](https://earthsystemmodeling.org/esmpy/)
+    tags: ["data"]

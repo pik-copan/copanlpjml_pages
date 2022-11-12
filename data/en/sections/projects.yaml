@@ -43,7 +43,7 @@ projects:
 
   - name: FINAM graphs
     logo: /images/logo.svg
-    repo: https://git.ufz.de/FINAM/finam-graph
+    repo: https://finam.pages.ufz.de/finam-graph/
     summary: A tool for visualizing FINAM model linkage setups
     tags: ["visual"]
 

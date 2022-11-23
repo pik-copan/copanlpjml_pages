@@ -24,7 +24,7 @@ features:
           (
               cpp_model.outputs["precip"]
               >> RegridLinear()
-              >> IntegrateTime()
+              >> LinearTime()
               >> fortran_model.inputs["precip"]
           )
           ```

@@ -18,7 +18,9 @@ features:
           Benefit from Python as glue code to couple models from different programming languages.
           Exchange any data between models in any language!
         content_right: |
-          <img src="/images/python-logo-generic.svg" />
+          <a href="https://python.org" title="Python">
+            <img src="/images/python-logo-generic.svg" />
+          </a>
 
           ```python
           (
@@ -82,10 +84,12 @@ features:
   - positions:
       - name: Spatio-temporal data types
         content_left: |
-          For structured and unstructured spatio-temporal data, FINAM uses [`xarray`](https://xarray.dev/).
+          For structured and unstructured spatio-temporal data, FINAM uses [`numpy`](https://numpy.org) arrays.
           All data has physical units, using [`pint`](https://pint.readthedocs.io/en/stable/).
 
           Metadata is used for automatic consistency checks, and follows the CF Conventions.
         content_right: |
-          <img src="/images/dataset-diagram-logo.png" />
+          <a href="https://numpy.org" title="NumPy">
+            <img src="/images/NumPy_logo.svg" />
+          </a>
 

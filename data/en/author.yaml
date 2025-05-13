@@ -1,6 +1,6 @@
 # some information about the subject
-name: FINAM
-nickname: FINAM &ndash; Python model coupling framework
+name: copan:LPJmL
+nickname: copan:LPJmL &ndash; Python modeling framework
 image: images/logo.svg
 
 # greeting message before your name. it will default to "Hi! I am" if not provided
@@ -8,14 +8,14 @@ greeting: ""
 
 # give your contact information. they will be used in the footer
 contactInfo:
-  email: finam@ufz.de
+  email: copanlpjml@pik-potsdam.de
   gitlab: |
-    <a href="https://git.ufz.de/finam" target="_blank" rel="noopener">
-    <span><i class="fab fa-gitlab"></i></span> <span>git.ufz.de/FINAM</span>
+    <a href="https://github.com/pik-copan/pycopanlpjml" target="_blank" rel="noopener">
+    <span><i class="fab fa-github"></i></span> <span>github.com/pik-copan/pycopanlpjml</span>
     </a>
 
 # a summary of what it does
 summary:
-  - Lightweight Python framework
-  - Fast, flexible, easy to use
-  - pip install finam
+  - Flexible DGVM-based World-Earth modeling framework
+  - Fast, modular, easy to use
+  - pip install pycopanlpjml

@@ -1,3 +1,3 @@
-# FINAM web site
+# copan:LPJmL web site
 
-Sources for the FINAM website (Hugo)
+Sources for the copan:LPJmL website (Hugo)

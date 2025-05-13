@@ -102,22 +102,32 @@
     }
     </style>
     <span class="on-the-fly-behavior"></span>
-  <div
-    id="homePageBackgroundImageDivStyled"
-    class="background container-fluid"
-    style="background-image: linear-gradient(black, #005aa0);"
-  ></div>
-  <div class="container content text-center">
+    <div class="animated-shards-background container-fluid">
+      <div class="shard shard1"></div>
+      <div class="shard shard2"></div>
+      <div class="shard shard3"></div>
+      <div class="shard shard4"></div>
+      <div class="shard shard5"></div>
+      <div class="shard shard6"></div>
+      <div class="shard shard7"></div>
+      <div class="shard shard8"></div>
+      <div class="shard shard9"></div>
+      <div class="shard shard10"></div>
+      <div class="shard shard11"></div>
+      <div class="shard shard12"></div>
+      <div class="shard shard13"></div>
+      <div class="shard shard14"></div>
+      <div class="shard shard15"></div>
+      <canvas id="networkCanvas"></canvas>
+    </div>
+    
+    <div class="container content text-center">
     <img src="{{ $authorImage.RelPermalink }}"
       class="mx-auto d-block img-fluid"
-      style="background: transparent;"
+      style="background: transparent; width: 2400px"
       alt="Author Image"
     />
-    <h1 class="greeting"> {{ $author.greeting }} {{ $name | markdownify }}</h1>
-    {{ if $author.subtitle }}
-      <h2 class="greeting-subtitle">{{ $author.subtitle | markdownify }}</h2>
-    {{ end }}
-    <div class="typing-carousel">
+    <div class="typing-carousel" style="color: black;">
       <span id="ityped" class="ityped"></span>
       <span class="ityped-cursor"></span>
     </div>
@@ -139,3 +149,97 @@
     {{ end }}
   </div>
 </div>
+
+<script>
+  const canvas = document.getElementById("networkCanvas");
+  const ctx = canvas.getContext("2d");
+  const shards = Array.from(document.querySelectorAll(".shard"));
+
+  function resizeCanvas() {
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+  }
+
+  window.addEventListener("resize", resizeCanvas);
+  resizeCanvas();
+
+  function getShardCenters() {
+    const parentRect = canvas.getBoundingClientRect();
+    return shards.map(el => {
+      const rect = el.getBoundingClientRect();
+      return {
+        x: rect.left + rect.width / 2 - parentRect.left,
+        y: rect.top + rect.height / 2 - parentRect.top
+      };
+    });
+  }
+
+  // Store dynamic connection pairs
+  let connections = new Set();
+
+  function generateRandomConnections(centers, numConnections = 100) {
+    const newConnections = [];
+    const indices = centers.map((_, i) => i);
+    for (let i = 0; i < numConnections; i++) {
+      const a = indices[Math.floor(Math.random() * indices.length)];
+      let b = a;
+      while (b === a) {
+        b = indices[Math.floor(Math.random() * indices.length)];
+      }
+
+      // Ensure the edge is stored in a normalized order
+      const pair = [a, b].sort();
+      const pairKey = pair.join(',');
+
+      // Only add the edge if it hasn't been added yet
+      if (!connections.has(pairKey)) {
+        connections.add(pairKey);
+        newConnections.push(pair);
+      }
+    }
+    connections = new Set([...connections, ...newConnections.map(pair => pair.join(','))]);
+  }
+
+  // Regenerate connections every 5 seconds
+  setInterval(() => {
+    const centers = getShardCenters();
+    generateRandomConnections(centers, 100); // ⬅️ increased from 50 to 150
+  }, 5000);
+  // Initial call
+  generateRandomConnections(getShardCenters(), 100); // ⬅️ match above
+
+  function drawNetwork() {
+    const centers = getShardCenters();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw edges from current connection list
+    for (const connection of connections) {
+      const [i, j] = connection.split(',').map(Number);
+      const dx = centers[i].x - centers[j].x;
+      const dy = centers[i].y - centers[j].y;
+      const dist2 = dx * dx + dy * dy;
+
+      const maxDist2 = 350 * 350;
+      if (dist2 < maxDist2) {
+        const alpha = 1 - dist2 / maxDist2;
+        ctx.strokeStyle = `rgba(30, 30, 30, ${alpha.toFixed(2)})`;
+        ctx.beginPath();
+        ctx.moveTo(centers[i].x, centers[i].y);
+        ctx.lineTo(centers[j].x, centers[j].y);
+        ctx.stroke();
+      }
+    }
+
+    // Draw dots
+    for (let i = 0; i < centers.length; i++) {
+      ctx.beginPath();
+      ctx.arc(centers[i].x, centers[i].y, 4, 0, 2 * Math.PI);
+      ctx.fillStyle = "#111";
+      ctx.fill();
+    }
+
+    requestAnimationFrame(drawNetwork);
+  }
+
+  drawNetwork();
+</script>

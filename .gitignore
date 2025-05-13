@@ -1,3 +1,20 @@
+# Hugo build directory
 /public/
 /resources/_gen/
 /.hugo_build.lock
+node_modules
+
+# Node.js dependencies
+/node_modules/
+
+# Logs and temp files
+*.log
+*.swp
+*.bak
+
+# IDE or editor folders
+.vscode/
+.idea/
+
+# System files
+.DS_Store

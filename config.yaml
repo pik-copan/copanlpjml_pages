@@ -1,6 +1,6 @@
-baseURL: 'https://finam.pages.ufz.de/'
+baseURL: ''
 languageCod: 'en-us'
-title: 'FINAM'
+title: 'copan:LPJmL'
 theme: "toha"
 
 # Manage languages
@@ -39,11 +39,12 @@ params:
     favicon: /images/logo.svg
 
   # GitHub repo URL and branch of your site
-  gitRepo: https://git.ufz.de/FINAM/finam.pages.ufz.de
+  gitRepo: https://github.com/pik-copan/copanlpjml
   gitBranch: main
 
   topNavbar:
     maxVisibleSections: 5
+
 
   # specify whether you want to write some blog posts or not
   enableBlogPost: false

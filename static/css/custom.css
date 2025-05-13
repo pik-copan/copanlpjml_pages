@@ -1,19 +1,23 @@
 
 .circle {
-    background-color: #005aa0 !important;
+    background-color: #e37222 !important;
 }
 
 .timeline .horizontal-line hr {
-    border-color: #005aa0 !important;
-}
-.timeline .horizontal-line .corner {
-    border-color: #005aa0 !important;
+    border-color: #e37222 !important;
 }
 .timeline .vertical-line::after {
-    border-color: #005aa0 !important;
+    border-color: #e37222 !important;
 }
 .btn-info {
-    background-color: #005aa0 !important;
+    background-color: #e37222 !important;
+}
+
+.corner {
+  border: 3px solid #e37222 !important;  /* Ensures the new color is applied */
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
 }
 
 div.col-lg-6 {
@@ -59,4 +63,88 @@ pre > code {
   60% {
     transform: translateY(-6px);
   }
+}
+
+.animated-shards-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #F8FAFC; /* Change background to white */
+  perspective: 1500px; /* Create 3D space */
+}
+
+/* Base shard style */
+.shard {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.5;
+  filter: blur(10px);
+  animation: floatShard 30s linear infinite alternate;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* Colored Shards with more spaced out, randomized positions */
+.shard1 { background: #B0CC44; top: 10%; left: 5%; animation-delay: 0s; border-radius: 50%; }
+.shard2 { background: #C99E67; top: 20%; left: 40%; animation-delay: 5s; }
+.shard3 { background: #e37222; top: 40%; left: 25%; animation-delay: 10s; border-radius: 50%; }
+.shard4 { background: #487B9C; top: 50%; left: 80%; animation-delay: 15s; }
+.shard5 { background: #6C843B; top: 60%; left: 30%; animation-delay: 20s; border-radius: 50%; }
+.shard6 { background: #395C6B; top: 80%; left: 10%; animation-delay: 25s; }
+.shard7 { background: #7caeaf; top: 15%; left: 75%; animation-delay: 5s; border-radius: 50%; }
+.shard8 { background: #e37222; top: 40%; left: 25%; animation-delay: 10s; }
+.shard9 { background: #B0CC44; top: 45%; left: 60%; animation-delay: 2s; border-radius: 50%; }
+.shard10 { background: #C99E67; top: 70%; left: 50%; animation-delay: 12s; }
+.shard11 { background: #8C6239; top: 20%; left: 90%; animation-delay: 18s; border-radius: 50%; }
+.shard12 { background: #487B9C; top: 60%; left: 40%; animation-delay: 5s; }
+.shard13 { background: #6C843B; top: 35%; left: 85%; animation-delay: 8s; border-radius: 50%; }
+.shard14 { background: #e37222; top: 40%; left: 25%; animation-delay: 10s; }
+.shard15 { background: #7caeaf; top: 50%; left: 90%; animation-delay: 27s; border-radius: 50%; }
+
+/* Add 3D rotation effect (spinning) */
+@keyframes floatShard {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg) translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: rotateY(180deg) rotateX(45deg) translateY(-100px) rotate(180deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(0deg) translateY(0) rotate(360deg);
+  }
+}
+
+/* Optional content overlay */
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 40%;
+  color: rgb(0, 0, 0); /* Change text color to black */
+  font-family: sans-serif;
+}
+
+#top-navbar,
+#top-navbar .nav-link,
+#top-navbar .navbar-brand,
+#top-navbar .dropdown-menu,
+#top-navbar .dropdown-item {
+  color: black !important;
+}
+
+#top-navbar .nav-link:hover,
+#top-navbar .dropdown-item:hover {
+  color: #333 !important; /* optional darker hover */
+}
+
+#networkCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
 }

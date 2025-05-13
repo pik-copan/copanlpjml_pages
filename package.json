@@ -1,0 +1,25 @@
+{
+  "name": "copanlpjml-pages",
+  "version": "1.0.0",
+  "description": "Dependencies for Toha Hugo theme",
+  "scripts": {
+    "postinstall": "echo 'Dependencies installed. You can now run Hugo.'"
+  },
+  "dependencies": {
+    "@fontsource/mulish": "^5.2.5",
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "bootstrap": "^5.3.3",
+    "feather-icons": "^4.29.1",
+    "filterizr": "^2.2.4",
+    "fuse.js": "^6.6.2",
+    "highlight.js": "^11.9.0",
+    "imagesloaded": "^5.0.0",
+    "include-media": "1.4.9",
+    "ityped": "^1.0.3",
+    "katex": "^0.16.9",
+    "mark.js": "^8.11.1",
+    "mermaid": "^10.9.0",
+    "plyr": "^3.7.8",
+    "popper.js": "^1.16.1"
+  }
+}

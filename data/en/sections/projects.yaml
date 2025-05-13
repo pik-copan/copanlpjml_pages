@@ -14,6 +14,8 @@ buttons:
     filter: "all"
   - name: Core
     filter: "core"
+  - name: Models
+    filter: "models"
   - name: Visual
     filter: "visual"
   - name: Data
@@ -23,38 +25,52 @@ buttons:
 
 # your projects
 projects:
-  - name: FINAM core
+
+  - name: copan:LPJmL
     logo: /images/logo.svg
-    repo: https://git.ufz.de/FINAM/finam
-    summary: The FINAM core framework and basic tools
+    repo: https://github.com/pik-copan/pycopanlpjml
+    summary: The advanced World-Earth modeling framework
     tags: ["core"]
 
-  - name: FINAM documentation
+  - name: copan:CORE
     logo: /images/logo.svg
-    repo: https://finam.pages.ufz.de/finam/
-    summary: FINAM's extensive documentation with user and developer guide
-    tags: ["docs"]
+    repo: https://github.com/pik-copan/pycopancore
+    summary: The copan:CORE framework; entities, taxonomies, and core concepts
+    tags: ["core"]
 
-  - name: FINAM NetCDF I/O
+  - name: LPJmL
     logo: /images/logo.svg
-    repo: https://finam.pages.ufz.de/finam-netcdf/
-    summary: NetCDF file I/O components for FINAM
-    tags: [ "data" ]
+    repo: https://github.com/pik-lpjml/LPJmL/
+    summary: The Lund-Potsdam-Jena managed Land model (LPJmL)
+    tags: ["core"]
 
-  - name: FINAM graphs
+  - name: copan:Models
+    logo: /images/logo.svg
+    repo: https://github.com/pik-copan/pycopanmodels/
+    summary: Examplaric models for copan:CORE
+    tags: [ "models" ]
+
+  - name: pycoupler
+    logo: /images/logo.svg
+    repo: https://github.com/pik-lpjml/pycoupler/
+    summary: dynamic model coupling of LPJmL
+    tags: ["core"]
+
+
+  - name: copan:LPJmL graphs
     logo: /images/logo.svg
     repo: https://finam.pages.ufz.de/finam-graph/
-    summary: A tool for visualizing FINAM model linkage setups
+    summary: A tool for visualizing copan:LPJmL model linkage setups
     tags: ["visual"]
 
-  - name: FINAM plot
+  - name: copan:LPJmL plot
     logo: /images/logo.svg
     repo: https://finam.pages.ufz.de/finam-plot/
     summary: Live visualization components for spatial data
     tags: ["visual"]
 
-  - name: FINAM regrid
+  - name: copan:LPJmL regrid
     logo: /images/logo.svg
     repo: https://finam.pages.ufz.de/finam-regrid/
-    summary: Advanced regridding adapter for FINAM, using [ESMPy](https://earthsystemmodeling.org/esmpy/)
+    summary: Advanced regridding adapter for copan:LPJmL, using [ESMPy](https://earthsystemmodeling.org/esmpy/)
     tags: ["data"]

@@ -5,26 +5,26 @@ copyright: © 2022 Copyright.
 disclaimer: "Disclaimer..."
 
 # Meta description for your site.  This will help the search engines to find your site.
-description: Website of the FINAM model coupling framework.
+description: Website of the copan:LPJmL modeling framework.
 
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
 customMenus:
 - name: Documentation
-  url: https://finam.pages.ufz.de/finam/
+  url: https://github.com/pik-copan/copanlpjml
   hideFromNavbar: false
   showOnFooter: true
   target: _blank
-- name: GitLab
-  url: https://git.ufz.de/FINAM
+- name: GitHub
+  url: https://github.com/pik-copan/pycopanlpjml
   hideFromNavbar: false
   showOnFooter: true
   target: _blank
 
 # Specify OpenGraph Headers
 openGraph:
-  title: FINAM website
+  title: copan:LPJmL website
   type: website
-  description: Website of the FINAM model coupling framework
+  description: Website of the copan:LPJmL modeling framework
   image: images/logo.png
-  url: https://hugo-toha.github.io
+  url: https://pik-potsdam.de

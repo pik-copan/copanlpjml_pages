@@ -25,6 +25,6 @@ customMenus:
 openGraph:
   title: copan:LPJmL website
   type: website
-  description: Website of the copan:LPJmL modeling framework
+  description: Website of the copan:LPJmL modeling framework.
   image: images/logo.png
   url: https://pik-potsdam.de

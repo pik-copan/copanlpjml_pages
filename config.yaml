@@ -45,6 +45,8 @@ params:
   topNavbar:
     maxVisibleSections: 5
 
+  theme: light
+  themeSwitching: false
 
   # specify whether you want to write some blog posts or not
   enableBlogPost: false

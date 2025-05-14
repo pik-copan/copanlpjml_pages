@@ -1,0 +1,35 @@
+{{ $sectionID := replace (lower .section.name) " " "-" }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor py-5 hero-section" id="{{ $sectionID }}">
+  <div class="container">
+    <div class="row justify-content-center">
+      {{ range .callouts }}
+        <div class="col-md-4 text-center mb-4">
+          <div class="hero-callout">
+            <div class="mb-3 {{ printf "hero-icon-%s" (.iconColor | default "primary") }}">
+              {{- if strings.HasSuffix .icon ".svg" }}
+                {{ $svg := printf "icons/%s" .icon | resources.Get }}
+                {{ with $svg }}
+                  <div class="hero-icon-svg">{{ .Content | safeHTML }}</div>
+                {{ else }}
+                  <p class="text-danger">SVG not found: {{ .icon }}</p>
+                {{ end }}
+              {{ else }}
+                <i class="{{ .icon }} fa-4x"></i>
+              {{ end }}
+            </div>
+            <h5 class="fw-bold">{{ .headline }}</h5>
+            <h6 class="text-muted">{{ .subheadline }}</h6>
+            <p class="my-3">{{ .description }}</p>
+            <a href="{{ .link.url }}" class="btn btn-outline-dark" {{ with .link.target }}target="{{ . }}"{{ end }}>
+              {{ .link.label }}
+            </a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

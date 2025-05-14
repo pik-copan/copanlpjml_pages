@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Features
+  name: Getting started
   id: features
   enable: true
   weight: 2

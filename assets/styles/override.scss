@@ -1,0 +1,114 @@
+
+
+// themes
+$themes: (
+  'light': (
+    // cyan 600
+    'accent-color': #e37222,
+    // cyan 500
+    'hover-over-accent-color': #06b6d4,
+    // zinc 200
+    'text-over-accent-color': #e4e4e7,
+    // slate 50
+    'bg-primary': #f8fafc,
+    // slate 900
+    'bg-primary-inverse': #0f172a,
+    // slate 200
+    'bg-secondary': #e2e8f0,
+    'bg-card': #fff,
+    // slate 800
+    'heading-color': #1e293b,
+    // slate 700
+    'text-color': #334155,
+    // slate 300
+    'inverse-text-color': #cbd5e1,
+    // slate 500
+    'muted-text-color': #64748b,
+    // red 600
+    'inline-code-color': #dc2626,
+    // amber 200
+    'highlight-color': #fde68a,
+    // slate 900
+    'footer-color': #0f172a,
+  ),
+  'dark': (
+    // cyan 600
+    'accent-color': #0891b2,
+    // cyan 500
+    'hover-over-accent-color': #06b6d4,
+    // zinc 200
+    'text-over-accent-color': #e4e4e7,
+    // gray-800
+    'bg-primary': #1f2937,
+    // slate 900
+    'bg-primary-inverse': #0f172a,
+    // gray 900
+    'bg-secondary': #111827,
+    // slate 800
+    'bg-card': #1e293b,
+    // slate 100
+    'heading-color': #f1f5f9,
+    // slate 300
+    'text-color': #cbd5e1,
+    // slate 900
+    'inverse-text-color': #0f172a,
+    // slate 500
+    'muted-text-color': #64748b,
+    // red 600
+    'inline-code-color': #dc2626,
+    // amber 200
+    'highlight-color': #fde68a,
+    // slate 900
+    'footer-color': #0f172a,
+  ),
+);
+
+/* Section background */
+.hero-section {
+  background-color: get-light-color('bg-card');
+}
+
+
+/* Card (callout) style */
+.hero-callout {
+  padding: 2rem;
+  background: get-light-color('bg-card');
+  border-radius: 8px;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.hero-callout:hover {
+  transform: translateY(-4px);
+}
+
+/* Icon colors */
+.hero-icon-primary {
+  color: get-light-color('accent-color');
+}
+
+/* Button */
+.hero-section .btn {
+  margin-top: 1rem;
+}
+
+/* Icon wrapper container */
+.hero-icon-svg {
+    width: 5rem;             /* Final visual "scale" size */
+    height: 5rem;
+    display: inline-flex;    /* Flex for centering */
+    align-items: center;
+    justify-content: center;
+    color: currentColor; /* or `currentColor` for inheriting */
+    line-height: 1;
+    overflow: hidden;        /* Prevent overflow if aspect ratio is extreme */
+  }
+  
+  /* SVG inside: scale by height, preserve aspect ratio */
+  .hero-icon-svg svg {
+    height: 70%;            /* Always fill the container's height */
+    width: auto;             /* Let width auto-adjust to preserve aspect ratio */
+    display: block;
+    fill: currentColor;
+    max-width: none;         /* Prevent width from shrinking if too wide */
+  }

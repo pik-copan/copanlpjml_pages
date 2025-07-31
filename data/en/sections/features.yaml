@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Getting started
+  name: How it works ...
   id: features
   enable: true
   weight: 2
@@ -11,35 +11,58 @@ section:
 # Your experiences
 features:
   - positions:
-      - name: Written in Python, for any language
+      - name: A detailed biosphere representation
         content_left: |
-          Use the power and convenience of Python to wrap you models, write adapters, and set up model linkage.
+          copan:LPJmL uses LPJmL for a detailed representation of the
+          terrestrial biosphere.  
 
-          Benefit from Python as glue code to couple models from different programming languages.
-          Exchange any data between models in any language!
+          LPJmL is a dynamic global vegetation model that simulates the carbon,
+          nitrogen, water and energy cycles in conjunction with the growth and
+          productivity of natural and agricultural ecosystems.  
+          These are driven by climate, land use, or other globally gridded
+          input data.
+
+          It can represent a wide range of agricultural management systems, and
+          its impacts simulated by the process-based richness of LPJmL.
+
+          <img src="/images/lpjml_logo.svg" width="230" />
+
         content_right: |
-          <a href="https://python.org" title="Python">
-            <img src="/images/python-logo-generic.svg" />
-          </a>
+          <img src="/images/lpjml_scheme.png" />
 
-          ```python
-          (
-              cpp_model.outputs["precip"]
-              >> RegridLinear()
-              >> LinearTime()
-              >> fortran_model.inputs["precip"]
-          )
-          ```
   - positions:
-      - name: Flexible, component-based model building
+      - name: The CORE World-Earth modeling framework 
         content_left: |
-          A component-based coupling approach warrants high modularity and independence of linked components.
+          <img src="/images/copan_core.png" />
+        content_right: |
+          copan:CORE sets the hierarchy, design principles and interfaces
+          applied in copan:LPJmL.
+          
+          It provides entities for the construction of World-Earth Models to
+          represent human societies, economies, and their interactions with the
+          Earth system.
+          
+          copan:CORE enables the modular composition of
+          biophysical, socio-metabolic, and sociocultural processes involving
+          each entity.
 
-          Models are wrapped into a unified interface, and communicate through adapters.
+  - positions:
+      - name: Bidirectional and circular model integration
+        content_left: |
+          With pycoupler we enabled annual data coupling with LPJmL for any
+          Python-based software.
+
+          LPJmL can send all available output and receive all available inputs
+          via the interface.
+
+          copan:LPJmL integrates pycoupler into the CORE hierarchy featuring
+          World as the entire simulation space and Cell as the smallest
+          simulation unit.
+
         content_right: |
           <img src="/images/coupling.svg" />
   - positions:
-      - name: Minimal, unified component interface
+      - name: Simple model setups and simulations
         content_left: |
           Wrapping existing models is easy!
 

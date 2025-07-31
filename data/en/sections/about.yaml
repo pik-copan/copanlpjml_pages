@@ -20,7 +20,7 @@ summary: |
       It extends copan:CORE by integrating LPJmL as the Earth system interface for
       comprehensive social-ecological simulations.
       <br><br>
-      It is built upon the copan:CORE framework, standardizing the Earth
+      copan:CORE serves as the basic framework, standardizing the Earth
       interface and making it flexible and modular in representing various
       components of the World system.
       <br>We support the usage of every LPJmL version > 5.9.

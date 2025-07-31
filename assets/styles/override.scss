@@ -112,3 +112,33 @@ $themes: (
     fill: currentColor;
     max-width: none;         /* Prevent width from shrinking if too wide */
   }
+
+/* Code block styling - override Hugo's inline styles */
+.highlight pre, pre {
+  background-color: #f6f8fa !important;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* Chroma syntax highlighting - Atom One Light colors */
+.chroma .k { color: #a626a4; font-weight: bold; } /* keyword - purple */
+.chroma .nc { color: #c18401; font-weight: bold; } /* name class - orange */
+.chroma .nf { color: #4078f2; } /* name function - blue */
+.chroma .fm { color: #4078f2; } /* name function magic - blue */
+.chroma .s, .chroma .s1, .chroma .s2 { color: #50a14f; } /* string - green */
+.chroma .c, .chroma .c1, .chroma .cm { color: #a0a1a7; font-style: italic; } /* comment - gray */
+.chroma .n { color: #383a42; } /* name - dark gray */
+.chroma .p { color: #383a42; } /* punctuation - dark gray */
+.chroma .o { color: #e45649; } /* operator - red */
+.chroma .bp { color: #4078f2; } /* name builtin pseudo - blue */
+.chroma .m, .chroma .mi { color: #986801; } /* number - orange */
+
+/* Inline code styling */
+p code, li code {
+  background-color: rgba(175, 184, 193, 0.2);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 85%;
+}

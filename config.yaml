@@ -19,6 +19,12 @@ markup:
     startLevel: 2
     endLevel: 6
     ordered: false
+  highlight:
+    style: github
+    lineNos: false
+    lineNumbersInTable: false
+    noClasses: false
+    codeFences: true
 
 # At least HTML and JSON are required for the main HTML content and
 # client-side JavaScript search

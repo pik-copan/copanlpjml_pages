@@ -20,8 +20,7 @@ buttons:
     filter: "visual"
   - name: Data
     filter: "data"
-  - name: Docs
-    filter: "docs"
+
 
 # your projects
 projects:
@@ -55,22 +54,3 @@ projects:
     repo: https://github.com/pik-lpjml/pycoupler/
     summary: dynamic model coupling of LPJmL
     tags: ["core"]
-
-
-  - name: copan:LPJmL graphs
-    logo: /images/logo.svg
-    repo: https://finam.pages.ufz.de/finam-graph/
-    summary: A tool for visualizing copan:LPJmL model linkage setups
-    tags: ["visual"]
-
-  - name: copan:LPJmL plot
-    logo: /images/logo.svg
-    repo: https://finam.pages.ufz.de/finam-plot/
-    summary: Live visualization components for spatial data
-    tags: ["visual"]
-
-  - name: copan:LPJmL regrid
-    logo: /images/logo.svg
-    repo: https://finam.pages.ufz.de/finam-regrid/
-    summary: Advanced regridding adapter for copan:LPJmL, using [ESMPy](https://earthsystemmodeling.org/esmpy/)
-    tags: ["data"]

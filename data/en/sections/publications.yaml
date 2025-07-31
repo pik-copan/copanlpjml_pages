@@ -21,13 +21,13 @@ section:
 publications:
   - title: Coming soon...
     publishedIn:
-      name: #Environmental Modelling and Software
-      date: #31 December 2022
-      url: #https://example.com
+      name: Earth System Dynamics
+      date: 31 December 2025
+      url: https://example.com
     authors:
-      - name: #Team LandTech
+      - name: InSEEDS team
     paper:
-      summary: #Abstract of the paper...
-      url: #https://example.com
-    categories: #["framework"]
-    tags: #["FINAM", "technical", "design"]
+      summary: Abstract of the paper...
+      url: https://example.com
+    categories: ["framework"]
+    tags: ["FINAM", "technical", "design"]

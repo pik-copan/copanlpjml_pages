@@ -30,4 +30,4 @@ publications:
       summary: Abstract of the paper...
       url: https://example.com
     categories: ["framework"]
-    tags: ["FINAM", "technical", "design"]
+    tags: ["pycopanlpjml", "technical", "design"]

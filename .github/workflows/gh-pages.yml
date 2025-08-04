@@ -15,6 +15,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/main'
 
     steps:
       - name: Checkout repository
@@ -26,34 +27,18 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Download latest documentation (test only)
-        if: github.ref != 'refs/heads/main'
-        uses: dawidd6/action-download-artifact@v2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          workflow: build-docs-artifact.yml
-          repo: pik-copan/pycopanlpjml  # 🔄 UPDATE THIS TO YOUR ACTUAL REPO
-          name: pycopanlpjml-docs-latest
-          path: ./static/docs
-          search_artifacts: true
-          check_artifacts: true
-          if_no_artifact_found: warn
-        continue-on-error: true
-
-      - name: Build Hugo site
-        run: hugo
-
-      - name: Upload public folder as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: public-test
-          path: public/
-
-    if: github.ref != 'refs/heads/main'
+      - name: Test Hugo build (without docs)
+        run: |
+          echo "Testing Hugo build without external docs..."
+          hugo --verbose
+          
+      - name: Verify output
+        run: |
+          ls -la public/
+          echo "✅ Hugo build successful"
 
   pages:
     runs-on: ubuntu-latest
-    needs: test
     if: github.ref == 'refs/heads/main'
     permissions:
       contents: read

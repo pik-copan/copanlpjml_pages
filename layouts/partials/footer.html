@@ -165,6 +165,62 @@
           </div>
         {{ end }}
       </div>
+      
+      <!-- Legal Section -->
+      {{ $legalMenus := (index site.Data site.Language.Lang).site.legalMenus }}
+      {{ if $legalMenus }}
+      <div class="row text-left mt-4">
+        <div class="col-12">
+          <hr class="my-3" style="border-color: rgba(255,255,255,0.1);">
+          <div class="text-center">
+            <h6 class="text-muted mb-3">Legal Information</h6>
+            <div class="legal-links">
+              {{ range $legalMenus }}
+                <a href="{{ .url }}" class="legal-link" {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
+                {{ if not (eq . (index $legalMenus (sub (len $legalMenus) 1))) }}<span class="legal-separator">•</span>{{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+      .legal-links {
+        margin-bottom: 1rem;
+      }
+      
+      .legal-link {
+        color: #6c757d;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.3s ease;
+        margin: 0 0.5rem;
+      }
+      
+      .legal-link:hover {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      
+      .legal-separator {
+        color: #6c757d;
+        margin: 0 0.5rem;
+        font-size: 0.8rem;
+      }
+      
+      @media (max-width: 768px) {
+        .legal-links {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        
+        .legal-separator {
+          display: none;
+        }
+      }
+      </style>
+      {{ end }}
     </div>
     {{ if and $disclaimerEnabled $disclaimer}}
     <hr />

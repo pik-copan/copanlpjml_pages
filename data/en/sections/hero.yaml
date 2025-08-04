@@ -13,7 +13,7 @@ callouts:
     # description: "Heard about LPJmL or copan:CORE and want to know how they integrate to copan?"
     description: "We integrated the dynamic global vegetation model (DGVM) LPJmL with copan:CORE into an advanced World–Earth modeling framework."
     link:
-      url: "/overview/"
+      url: "/features/"
       label: "Learn more"
 
   - icon: "world-earth.svg"
@@ -21,7 +21,7 @@ callouts:
     subheadline: "... World-Earth modeling (WEM)?"
     description: "WEMs connect human decisions with Earth system feedbacks. Unlike ESMs, they model society and nature as co-evolving."
     link:
-      url: "https://www.pism.io/docs/"
+      url: # ""
       label: "Read more"
       target: "_blank"
 
@@ -30,6 +30,6 @@ callouts:
     subheadline: "... can you apply it?"
     description: "Simulate land use, management practices, or regenerative agriculture? Try InSEEDS or write your own model!"
     link:
-      url: "https://github.com/pism/pism/"
+      url: # ""
       label: "See how it works"
       target: "_blank"

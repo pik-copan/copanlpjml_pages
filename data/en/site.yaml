@@ -21,6 +21,18 @@ customMenus:
   showOnFooter: true
   target: _blank
 
+# Legal section for footer
+legalMenus:
+- name: Impressum
+  url: /legal/impressum/
+  target: _self
+- name: Privacy Policy
+  url: /legal/privacy/
+  target: _self
+- name: Accessibility Statement
+  url: /legal/accessibility/
+  target: _self
+
 # Specify OpenGraph Headers
 openGraph:
   title: copan:LPJmL website

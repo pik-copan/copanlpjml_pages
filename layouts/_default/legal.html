@@ -1,0 +1,121 @@
+{{ define "header" }}
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}" />
+{{ with .Params.relcanonical }}
+<link rel="canonical" href="{{ . | relLangURL }}" itemprop="url" />
+{{ end }}
+{{ end }}
+
+{{ define "navbar" }}
+    {{ partial "navigators/navbar.html" . }}
+{{ end }}
+
+{{ define "content" }}
+<div class="content container-fluid" id="content">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10 col-sm-12">
+      <div class="legal-page-content">
+        <!-- Page Header -->
+        <div class="text-center mb-5 pt-4">
+          <h1 class="display-4 mb-3">{{ .Page.Title }}</h1>
+          <hr class="my-4" style="max-width: 200px; margin: 0 auto;">
+        </div>
+
+        <!-- Legal Content -->
+        <div class="legal-content">
+          {{ .Page.Content }}
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="text-center mt-5 mb-4">
+          <hr class="my-4">
+          <a href="{{ "/" | relLangURL }}" class="btn btn-outline-dark">
+            <i class="fas fa-home me-2"></i>Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Custom styling for legal pages -->
+<style>
+.legal-page-content {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+.legal-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.legal-content h2 {
+  color: #2c3e50;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.legal-content h3 {
+  color: #34495e;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.legal-content p {
+  margin-bottom: 1.2rem;
+}
+
+.legal-content a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.legal-content a:hover {
+  text-decoration: underline;
+}
+
+.legal-content ul, .legal-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.legal-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .legal-page-content {
+    background: rgba(33, 37, 41, 0.95);
+    color: #e9ecef;
+  }
+  
+  .legal-content {
+    color: #e9ecef;
+  }
+  
+  .legal-content h2,
+  .legal-content h3 {
+    color: #ffffff;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .legal-page-content {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .legal-content {
+    font-size: 1rem;
+  }
+}
+</style>
+{{ end }}

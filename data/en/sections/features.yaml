@@ -1,6 +1,6 @@
 # section information
 section:
-  name: How it works ...
+  name: Features
   id: features
   enable: true
   weight: 2
@@ -43,7 +43,8 @@ features:
           
           Flexibly compose biophysical, socio-metabolic, and sociocultural
           processes involving different entities.
-          <br />
+
+
           <img src="/images/copan_core.svg" width="160" style="float: right;" />
 
   - positions:
@@ -83,7 +84,7 @@ features:
           ```
 
         content_right: |
-          Model simulations can be **configured and run with a few lines of code.**
+          Model simulations can be **configured and run with a few lines of code ...**
 
           It needs a compiled LPJmL version > 5.9 and a Python environment with
           an installed `pycopanlpjml` library.

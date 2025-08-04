@@ -26,31 +26,40 @@ buttons:
 projects:
 
   - name: copan:LPJmL
-    logo: /images/logo.svg
+    logo: /images/logo_favicon.svg
     repo: https://github.com/pik-copan/pycopanlpjml
     summary: The advanced World-Earth modeling framework
     tags: ["core"]
 
   - name: copan:CORE
-    logo: /images/logo.svg
+    logo: /images/logo_favicon.svg
     repo: https://github.com/pik-copan/pycopancore
     summary: The copan:CORE framework; entities, taxonomies, and core concepts
     tags: ["core"]
 
   - name: LPJmL
-    logo: /images/logo.svg
+    logo: /images/logo_lpjml_short.png
     repo: https://github.com/pik-lpjml/LPJmL/
     summary: The Lund-Potsdam-Jena managed Land model (LPJmL)
     tags: ["core"]
 
-  - name: copan:Models
-    logo: /images/logo.svg
-    repo: https://github.com/pik-copan/pycopanmodels/
-    summary: Examplaric models for copan:CORE
-    tags: [ "models" ]
-
   - name: pycoupler
-    logo: /images/logo.svg
+    logo: /images/logo_pycoupler.png
     repo: https://github.com/pik-lpjml/pycoupler/
     summary: dynamic model coupling of LPJmL
     tags: ["core"]
+
+  - name: InSEEDS
+    repo: https://github.com/pik-copan/inseeds/
+    summary: Model of integrated social-ecological resilient land systems
+    tags: [ "models" ]
+
+  - name: landmanager
+    repo: https://github.com/jnnsbrr/landmanager/
+    summary: Crop calendar, LLM fertilization, and more
+    tags: [ "models" ]
+
+  - name: copan:Models
+    repo: https://github.com/pik-copan/pycopanmodels/
+    summary: Examplaric models for copan:CORE
+    tags: [ "models" ]

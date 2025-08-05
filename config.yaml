@@ -1,5 +1,5 @@
-baseURL: ''
-languageCod: 'en-us'
+baseURL: 'https://copanlpjml.pik-potsdam.de'
+languageCode: 'en-us'
 title: 'copan:LPJmL'
 theme: "toha"
 

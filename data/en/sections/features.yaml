@@ -45,7 +45,7 @@ features:
           processes involving different entities.
 
 
-          <img src="/images/copan_core.svg" width="160" style="float: right;" />
+          <img src="/images/copan_core_logo.svg" width="160" style="float: right;" />
 
   - positions:
       - name: Dynamic model integration

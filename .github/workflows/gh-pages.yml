@@ -30,7 +30,7 @@ jobs:
       - name: Test Hugo build (without docs)
         run: |
           echo "Testing Hugo build without external docs..."
-          hugo --verbose
+          hugo --logLevel info
           
       - name: Verify output
         run: |
@@ -78,7 +78,7 @@ jobs:
       - name: Build Hugo site
         run: |
           echo "Building Hugo site with documentation..."
-          hugo --verbose
+          hugo --logLevel info
 
       - name: Upload public folder as artifact
         uses: actions/upload-artifact@v4

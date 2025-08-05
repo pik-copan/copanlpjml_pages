@@ -1,16 +1,5 @@
 baseURL: 'https://copanlpjml.pik-potsdam.de'
 relativeURLs: true
-
-module:
-  mounts:
-  - source: static
-    target: static
-  - source: ./node_modules/flag-icons/flags
-    target: static/flags
-  - source: ./node_modules/@fontsource/mulish/files
-    target: static/files
-  - source: ./node_modules/katex/dist/fonts
-    target: static/fonts
 languageCode: 'en-us'
 title: 'copan:LPJmL'
 theme: "toha"

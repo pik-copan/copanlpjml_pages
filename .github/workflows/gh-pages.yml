@@ -104,7 +104,7 @@ jobs:
           HUGO_ENV: production
         run: |
           echo "Building Hugo site with documentation..."
-          hugo --baseURL https://pik-copan.github.io/copanlpjml_pages/ --logLevel info
+          hugo --logLevel info
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

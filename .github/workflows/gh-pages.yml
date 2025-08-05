@@ -85,9 +85,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           workflow: build-docs-artifact.yml
-          repo: pik-copan/pycopanlpjml  # 🔄 UPDATE THIS TO YOUR ACTUAL REPO
+          repo: pik-copan/pycopanlpjml
           name: pycopanlpjml-docs-latest
           path: ./static/docs
+          branch: main
+          workflow_conclusion: success
           search_artifacts: true
           check_artifacts: true
           if_no_artifact_found: warn

@@ -11,10 +11,10 @@ description: Website of the copan:LPJmL modeling framework.
 # they will be separated by a divider from the main menus.
 customMenus:
 - name: Documentation
-  url: https://github.com/pik-copan/copanlpjml
+  url: /docs/
   hideFromNavbar: false
   showOnFooter: true
-  target: _blank
+  target: _self
 - name: GitHub
   url: https://github.com/pik-copan/pycopanlpjml
   hideFromNavbar: false

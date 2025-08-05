@@ -76,7 +76,9 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm ci
+          cd themes/toha && npm ci && cd ../..
 
       - name: Download latest documentation
         uses: dawidd6/action-download-artifact@v2

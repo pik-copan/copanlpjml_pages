@@ -75,10 +75,12 @@ jobs:
           node-version: '18'
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install dependencies and build theme
         run: |
           npm ci
           cd themes/toha && npm ci && cd ../..
+          hugo mod npm pack
+          npm install
 
       - name: Download latest documentation
         uses: dawidd6/action-download-artifact@v2

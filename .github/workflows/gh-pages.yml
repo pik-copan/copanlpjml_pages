@@ -102,7 +102,7 @@ jobs:
       - name: Build Hugo site
         run: |
           echo "Building Hugo site with documentation..."
-          hugo --baseURL https://pik-copan.github.io/copanlpjml_pages/ --logLevel info
+          hugo --baseURL https://pik-copan.github.io/copanlpjml_pages/ --minify --gc --logLevel info
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

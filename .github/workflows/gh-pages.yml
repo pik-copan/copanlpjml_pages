@@ -76,9 +76,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: |
-          npm ci
-          cd themes/toha && npm ci && cd ../..
+        run: npm ci
 
       - name: Download latest documentation
         uses: dawidd6/action-download-artifact@v2
@@ -104,7 +102,7 @@ jobs:
           HUGO_ENV: production
         run: |
           echo "Building Hugo site with documentation..."
-          hugo --baseURL https://pik-copan.github.io/copanlpjml_pages/ --minify --gc --logLevel info
+          hugo --minify --gc --logLevel info
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -9,105 +9,77 @@ layout: legal
 
 This accessibility statement applies to the website of the copan:LPJmL project hosted at the Potsdam Institute for Climate Impact Research (PIK).
 
-## Commitment to Accessibility
+PIK strives to make its website accessible in accordance with the Brandenburg Disability Equality Act (BbgBGG) and the Brandenburg Barrier-Free Information Technology Ordinance (BbgBITV) in conjunction with the Barrier-Free Information Technology Ordinance (BITV 2.0).
 
-We are committed to ensuring that our website is accessible to all users, including people with disabilities. We strive to comply with the accessibility standards set forth in the Brandenburg Accessibility Act (BbgBGG) and the Web Content Accessibility Guidelines (WCAG) 2.1.
+The basis for accessibility are the internationally valid Web Content Accessibility Guidelines (WCAG 2.1) at conformance level AA and the European standard EN 301 549, version 3.1.1. For PDF documents, the international PDF/UA standard is also observed.
 
-## Status of Compliance with Accessibility Requirements
+## Efforts to Support Accessibility
 
-This website is **partially compliant** with the Brandenburg Accessibility Act (BbgBGG) and the European standard EN 301 549 V3.2.1 (2021-03) due to the non-compliances and exemptions listed below.
+PIK takes the following measures to ensure accessibility:
 
-### Non-Accessible Content
+* Accessibility is integrated into our procurement practices
+* An accessibility officer is to be appointed
+* Continuous accessibility training is to be offered to employees
+* Regular testing and evaluation of our web presence
 
-The content listed below is not accessible for the following reasons:
+## Known Accessibility Issues
 
-#### Non-compliance with the Brandenburg Accessibility Act (BbgBGG)
+Despite our efforts, some problems may occur for users. Here is a description of known accessibility issues. Please contact us if you observe a problem that is not listed.
 
-- **Interactive elements:** Some interactive elements may not be fully accessible via keyboard navigation. We are working to improve keyboard accessibility across all interactive components.
-- **Color contrast:** Some text elements may not meet the required contrast ratios as specified in WCAG 2.1 AA standards.
-- **Alternative text:** Some images may lack comprehensive alternative text descriptions.
+**Videos:**  
+* Our videos currently do not have subtitles
+* No alternatives are offered for videos
 
-#### Disproportionate burden
+**PDF Documents:**  
+* Not all PDF documents meet accessibility requirements
 
-Currently, we have not identified any content that would constitute a disproportionate burden to make accessible.
+**Other Issues:**  
+* Alternatives for images and graphical elements are not fully available in all cases
+* Keyboard accessibility is not fully available for all elements/content
+* Words and sections in other languages are not marked
 
-#### Content not within the scope of applicable legislation
+## Browser and Assistive Technology Compatibility
 
-- **Third-party content:** External links and embedded content from third-party services may not meet our accessibility standards.
-- **Legacy documents:** Some older PDF documents may not be fully accessible but are being updated as resources permit.
+This website is designed to be compatible with the following browsers:
 
-## Preparation of This Accessibility Statement
+* Mozilla Firefox
+* Microsoft Edge
+* Google Chrome
 
-This statement was prepared on **January 1, 2024**.
+## Technologies
 
-The statement is based on a self-assessment by the copan:LPJmL project team in accordance with the requirements of the Brandenburg Accessibility Act.
+The accessibility of this website relies on the following technologies:
 
-**Last review:** January 1, 2024
+* HTML
+* CSS
+* JavaScript
 
-## Feedback and Contact Information
+## Assessment Method
 
-We welcome your feedback on the accessibility of the copan:LPJmL website. Please let us know if you encounter accessibility barriers:
+PIK has assessed the accessibility of this website using the following method:
 
-### Contact for Accessibility Issues
+Self-assessment: The website was evaluated internally within the organization.
 
-**Email:** [copanlpjml@pik-potsdam.de](mailto:copanlpjml@pik-potsdam.de)  
-**Subject line:** Please include "Accessibility" in the subject line  
+## Feedback Process
 
-**Postal address:**  
-copan:LPJmL Project Team  
-Potsdam Institute for Climate Impact Research (PIK) e.V.  
-Telegrafenberg A 31  
-14473 Potsdam  
-Germany  
+We welcome your feedback on the accessibility of this website. Please contact us via email:  
+Email: [breier@pik-potsdam.de](mailto:breier@pik-potsdam.de)
 
-We aim to respond to accessibility feedback within **10 business days**.
+We aim to respond to your feedback within 10 working days.
 
 ## Enforcement Procedure
 
-If you are not satisfied with our response to your accessibility concerns, you may contact the monitoring body for accessible internet and application technologies of the State of Brandenburg:
+If you are not satisfied with the handling of your concern or do not receive a response within three weeks through the above contact option, you can submit a request for review of the regulations and measures mentioned in the accessibility statement to the enforcement agency of the State of Brandenburg, established at:
 
-**Überwachungsstelle Barrierefreies Internet des Landes Brandenburg**  
-Landesamt für Soziales und Versorgung (LASV)  
-Lipezker Straße 45  
-03048 Cottbus  
+Ministry of Social Affairs, Health, Integration and Consumer Protection of the State of Brandenburg - State Commissioner for Persons with Disabilities | Enforcement Agency  
+Henning-von-Tresckow-Straße 2-13, Haus S  
+14467 Potsdam  
+Email: [Durchsetzung.BIT@MSGIV.Brandenburg.de](mailto:Durchsetzung.BIT@MSGIV.Brandenburg.de)
 
-**Phone:** +49 355 2893-0  
-**Fax:** +49 355 2893-4000  
-**Email:** [internet.barrierefrei@lasv.brandenburg.de](mailto:internet.barrierefrei@lasv.brandenburg.de)  
-**Website:** [https://lasv.brandenburg.de/lasv/de/aufsicht/ueberwachungsstelle-barrierefreies-internet/](https://lasv.brandenburg.de/lasv/de/aufsicht/ueberwachungsstelle-barrierefreies-internet/)
+The enforcement agency according to § 4 Para. 3 BbgBITV has the task of settling disputes between people with disabilities and public bodies of the State of Brandenburg regarding IT accessibility. The enforcement procedure is free of charge. No legal representation is required.
 
-## Our Commitment to Improvement
-
-We are committed to continuously improving the accessibility of our website. Our ongoing efforts include:
-
-- Regular accessibility audits and testing
-- Staff training on accessibility best practices
-- User testing with people with disabilities
-- Ongoing content review and updates
-- Implementation of user feedback
-
-### Accessibility Features Currently Available
-
-- Semantic HTML structure for screen reader compatibility
-- Keyboard navigation support for most website functions
-- Responsive design that works on various devices and screen sizes
-- Clear heading structure for easy navigation
-- Alternative text for most images
-
-### Planned Improvements
-
-- Enhanced keyboard navigation for all interactive elements
-- Improved color contrast throughout the site
-- Comprehensive alternative text for all images
-- Accessibility testing with assistive technologies
-- User testing with people with disabilities
-
-## Technical Information
-
-- **Website technology:** Hugo static site generator with Toha theme
-- **Accessibility standards:** WCAG 2.1 Level AA
-- **Testing tools:** We use automated accessibility testing tools and manual testing procedures
+The enforcement agency reviews the legal validity of the application from a content perspective and, in individual cases, orders a technical review of the website by the monitoring agency for accessibility of web and application technologies in the State of Brandenburg.
 
 ---
 
-*This accessibility statement was created in accordance with the requirements of the Brandenburg State Office for Social Affairs and Supply (LASV) and is regularly updated to reflect the current status of our website's accessibility.*
+*Last updated: September 2025*

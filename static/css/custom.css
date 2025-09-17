@@ -89,18 +89,18 @@ pre > code {
 /* Colored Shards with more spaced out, randomized positions */
 .shard1 { background: #B0CC44; top: 10%; left: 5%; animation-delay: 0s; border-radius: 50%; }
 .shard2 { background: #C99E67; top: 20%; left: 40%; animation-delay: 5s; }
-.shard3 { background: #e37222; top: 40%; left: 25%; animation-delay: 10s; border-radius: 50%; }
+.shard3 { background: #fa8531e5; top: 40%; left: 25%; animation-delay: 10s; border-radius: 50%; }
 .shard4 { background: #487B9C; top: 50%; left: 80%; animation-delay: 15s; }
 .shard5 { background: #6C843B; top: 60%; left: 30%; animation-delay: 20s; border-radius: 50%; }
 .shard6 { background: #395C6B; top: 80%; left: 10%; animation-delay: 25s; }
 .shard7 { background: #7caeaf; top: 15%; left: 75%; animation-delay: 5s; border-radius: 50%; }
-.shard8 { background: #e37222; top: 40%; left: 25%; animation-delay: 10s; }
+.shard8 { background: #fa8531e5; top: 40%; left: 25%; animation-delay: 10s; }
 .shard9 { background: #B0CC44; top: 45%; left: 60%; animation-delay: 2s; border-radius: 50%; }
 .shard10 { background: #C99E67; top: 70%; left: 50%; animation-delay: 12s; }
 .shard11 { background: #8C6239; top: 20%; left: 90%; animation-delay: 18s; border-radius: 50%; }
 .shard12 { background: #487B9C; top: 60%; left: 40%; animation-delay: 5s; }
 .shard13 { background: #6C843B; top: 35%; left: 85%; animation-delay: 8s; border-radius: 50%; }
-.shard14 { background: #e37222; top: 40%; left: 25%; animation-delay: 10s; }
+.shard14 { background: #fa8531e5; top: 40%; left: 25%; animation-delay: 10s; }
 .shard15 { background: #7caeaf; top: 50%; left: 90%; animation-delay: 27s; border-radius: 50%; }
 
 /* Add 3D rotation effect (spinning) */

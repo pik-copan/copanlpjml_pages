@@ -100,6 +100,104 @@
           background-image: url('{{ $src.RelPermalink }}');
         }
     }
+
+    .home {
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .home {
+        height: 80vh;
+      }
+    }
+
+    .animated-shards-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    #networkCanvas {
+      width: 100%;
+      height: 100%;
+    }
+    .container.content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+    .content img {
+      width: 45%;
+      max-width: 600px;
+      height: auto;
+      margin-bottom: 2rem;
+      background: transparent !important;
+    }
+
+    @media (max-width: 768px) {
+      .content img {
+        width: 60%;
+        max-width: 300px;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .typing-carousel {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      min-height: 2em;
+    }
+    #typing-carousel-data {
+      display: none;
+    }
+    .ityped-cursor {
+      animation: blink 0.8s infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    .arrow.bounce {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+      40% { transform: translateX(-50%) translateY(-20px); }
+      60% { transform: translateX(-50%) translateY(-10px); }
+    }
+
+    /* Background shapes */
+    .shard {
+      position: absolute;
+      width: 15vw;
+      height: 15vw;
+      filter: blur(15px);
+      opacity: 0.7;
+      mix-blend-mode: multiply;
+    }
+
+    @media (max-width: 768px) {
+      .typing-carousel {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+      }
+      .arrow.bounce {
+        bottom: 1rem;
+        font-size: 1.5rem;
+      }
+    }
     </style>
     <span class="on-the-fly-behavior"></span>
     <div class="animated-shards-background container-fluid">
@@ -124,7 +222,6 @@
     <div class="container content text-center">
     <img src="{{ $authorImage.RelPermalink }}"
       class="mx-auto d-block img-fluid"
-      style="background: transparent; width: 2400px"
       alt="Author Image"
     />
     <div class="typing-carousel" style="color: black;">
@@ -161,6 +258,8 @@
   }
 
   window.addEventListener("resize", resizeCanvas);
+  window.addEventListener("orientationchange", resizeCanvas);
+  window.addEventListener("load", resizeCanvas);
   resizeCanvas();
 
   function getShardCenters() {
@@ -174,10 +273,13 @@
     });
   }
 
-  // Store dynamic connection pairs
   let connections = new Set();
 
-  function generateRandomConnections(centers, numConnections = 100) {
+  function generateRandomConnections(centers, numConnections) {
+    // Increase connections for both mobile and desktop
+    const isMobile = window.innerWidth <= 768;
+    numConnections = isMobile ? 200 : 300;
+
     const newConnections = [];
     const indices = centers.map((_, i) => i);
     for (let i = 0; i < numConnections; i++) {
@@ -186,12 +288,8 @@
       while (b === a) {
         b = indices[Math.floor(Math.random() * indices.length)];
       }
-
-      // Ensure the edge is stored in a normalized order
       const pair = [a, b].sort();
       const pairKey = pair.join(',');
-
-      // Only add the edge if it hasn't been added yet
       if (!connections.has(pairKey)) {
         connections.add(pairKey);
         newConnections.push(pair);
@@ -200,26 +298,27 @@
     connections = new Set([...connections, ...newConnections.map(pair => pair.join(','))]);
   }
 
-  // Regenerate connections every 5 seconds
   setInterval(() => {
     const centers = getShardCenters();
-    generateRandomConnections(centers, 100); // ⬅️ increased from 50 to 150
+    generateRandomConnections(centers);
   }, 5000);
-  // Initial call
-  generateRandomConnections(getShardCenters(), 100); // ⬅️ match above
+
+  generateRandomConnections(getShardCenters());
 
   function drawNetwork() {
     const centers = getShardCenters();
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Draw edges from current connection list
+    const isMobile = window.innerWidth <= 768;
+    const maxDist = Math.min(canvas.width, canvas.height) * (isMobile ? 0.4 : 0.45);
+    const maxDist2 = maxDist * maxDist;
+
     for (const connection of connections) {
       const [i, j] = connection.split(',').map(Number);
       const dx = centers[i].x - centers[j].x;
       const dy = centers[i].y - centers[j].y;
       const dist2 = dx * dx + dy * dy;
 
-      const maxDist2 = 350 * 350;
       if (dist2 < maxDist2) {
         const alpha = 1 - dist2 / maxDist2;
         ctx.strokeStyle = `rgba(30, 30, 30, ${alpha.toFixed(2)})`;
@@ -230,10 +329,10 @@
       }
     }
 
-    // Draw dots
+    const dotSize = 2;
     for (let i = 0; i < centers.length; i++) {
       ctx.beginPath();
-      ctx.arc(centers[i].x, centers[i].y, 4, 0, 2 * Math.PI);
+      ctx.arc(centers[i].x, centers[i].y, dotSize, 0, 2 * Math.PI);
       ctx.fillStyle = "#111";
       ctx.fill();
     }

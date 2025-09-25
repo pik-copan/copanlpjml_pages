@@ -17,5 +17,5 @@ contactInfo:
 # a summary of what it does
 summary:
   - Flexible DGVM-based World-Earth modeling framework
-  - Fast, modular, easy to use
+  - Represent social-ecological systems
   - pip install pycopanlpjml

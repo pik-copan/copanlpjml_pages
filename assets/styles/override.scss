@@ -3,69 +3,69 @@
 // themes
 $themes: (
   'light': (
-    // cyan 600
+    // PIK Orange (keep existing)
     'accent-color': #e37222,
-    // cyan 500
-    'hover-over-accent-color': #06b6d4,
-    // zinc 200
-    'text-over-accent-color': #e4e4e7,
-    // slate 50
-    'bg-primary': #f8fafc,
-    // slate 900
-    'bg-primary-inverse': #0f172a,
-    // slate 200
-    'bg-secondary': #e2e8f0,
+    // PIK Light Blue
+    'hover-over-accent-color': #91cdcd,
+    // PIK Light Gray/Green
+    'text-over-accent-color': #e1e3d4,
+    // PIK Cream/Off-white
+    'bg-primary': #f2f3e3,
+    // PIK Black
+    'bg-primary-inverse': #000000,
+    // PIK Light Gray
+    'bg-secondary': #dadedc,
     'bg-card': #fff,
-    // slate 800
-    'heading-color': #1e293b,
-    // slate 700
-    'text-color': #334155,
-    // slate 300
-    'inverse-text-color': #cbd5e1,
-    // slate 500
-    'muted-text-color': #64748b,
-    // red 600
-    'inline-code-color': #dc2626,
-    // amber 200
-    'highlight-color': #fde68a,
-    // slate 900
-    'footer-color': #0f172a,
+    // PIK Dark Teal/Green
+    'heading-color': #344643,
+    // PIK Medium Gray
+    'text-color': #8e908f,
+    // PIK Very Light Gray/Blue
+    'inverse-text-color': #eceeed,
+    // PIK Muted Green
+    'muted-text-color': #82a096,
+    // PIK Orange (for inline code)
+    'inline-code-color': #e37222,
+    // PIK Light Green/Teal
+    'highlight-color': #86b9aa,
+    // PIK Black
+    'footer-color': #000000,
   ),
   'dark': (
-    // cyan 600
-    'accent-color': #0891b2,
-    // cyan 500
-    'hover-over-accent-color': #06b6d4,
-    // zinc 200
-    'text-over-accent-color': #e4e4e7,
-    // gray-800
-    'bg-primary': #1f2937,
-    // slate 900
-    'bg-primary-inverse': #0f172a,
-    // gray 900
-    'bg-secondary': #111827,
-    // slate 800
-    'bg-card': #1e293b,
-    // slate 100
-    'heading-color': #f1f5f9,
-    // slate 300
-    'text-color': #cbd5e1,
-    // slate 900
-    'inverse-text-color': #0f172a,
-    // slate 500
-    'muted-text-color': #64748b,
-    // red 600
-    'inline-code-color': #dc2626,
-    // amber 200
-    'highlight-color': #fde68a,
-    // slate 900
-    'footer-color': #0f172a,
+    // PIK Orange (keep existing)
+    'accent-color': #e37222,
+    // PIK Light Blue
+    'hover-over-accent-color': #91cdcd,
+    // PIK Light Gray/Green
+    'text-over-accent-color': #e1e3d4,
+    // PIK Dark Teal/Green
+    'bg-primary': #344643,
+    // PIK Black
+    'bg-primary-inverse': #000000,
+    // PIK Muted Green
+    'bg-secondary': #82a096,
+    // PIK Olive Green/Brown
+    'bg-card': #8a9079,
+    // PIK Cream/Off-white
+    'heading-color': #f2f3e3,
+    // PIK Light Gray
+    'text-color': #dadedc,
+    // PIK Black
+    'inverse-text-color': #000000,
+    // PIK Medium Gray
+    'muted-text-color': #8e908f,
+    // PIK Orange (for inline code)
+    'inline-code-color': #e37222,
+    // PIK Light Green/Teal
+    'highlight-color': #86b9aa,
+    // PIK Black
+    'footer-color': #000000,
   ),
 );
 
 /* Section background */
 .hero-section {
-  background-color: get-light-color('bg-card');
+  /* Use default theme background to match projects section */
 }
 
 

@@ -11,7 +11,7 @@ description: Website of the copan:LPJmL modeling framework.
 # they will be separated by a divider from the main menus.
 customMenus:
 - name: Documentation
-  url: /docs/
+  url: https://pycopanlpjml.readthedocs.io/
   hideFromNavbar: false
   showOnFooter: true
   target: _self

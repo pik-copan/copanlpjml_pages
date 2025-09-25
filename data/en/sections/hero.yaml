@@ -1,35 +1,34 @@
 section:
-  name: Hero
-  id: hero
+  name: Topics
+  id: topics
   enable: true
-  weight: 0 # appear before "About"
-  showOnNavbar: false
+  weight: 1 # appear before "About"
+  showOnNavbar: true
   template: sections/hero.html
 
 callouts:
-  - icon: "copanlpjml_icon2.svg"
-    headline: "What"
-    subheadline: "... is copan:LPJmL?"
-    # description: "Heard about LPJmL or copan:CORE and want to know how they integrate to copan?"
-    description: "We integrated the dynamic global vegetation model (DGVM) LPJmL with copan:CORE into an advanced World–Earth modeling framework."
+  - icon: "seedling.svg"
+    headline: "Why"
+    subheadline: "... social-ecological systems (SES)?"
+    description: "Regenerative agriculture, climate adaptation, food security or nature's contributions to people. Understand intertwined challenges."
     link:
-      url: "/features/"
+      url: "/ses/"
       label: "Learn more"
 
   - icon: "world-earth.svg"
-    headline: "Why"
-    subheadline: "... World-Earth modeling (WEM)?"
+    headline: "What"
+    subheadline: "... is World-Earth modeling (WEM)?"
     description: "WEMs connect human decisions with Earth system feedbacks. Unlike ESMs, they model society and nature as co-evolving."
     link:
-      url: # ""
+      url: "/wem/"
       label: "Read more"
       target: "_blank"
 
-  - icon: "seedling.svg"
+  - icon: "copanlpjml_icon2.svg"
     headline: "How"
     subheadline: "... can you apply it?"
-    description: "Simulate land use, management practices, or regenerative agriculture? Try InSEEDS or write your own model!"
+    description: "Simulate land use, management practices, or social-ecological challenges? Try InSEEDS or write your own model!"
     link:
-      url: # ""
+      url: "/examples/"
       label: "See how it works"
       target: "_blank"

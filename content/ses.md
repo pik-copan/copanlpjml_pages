@@ -3,7 +3,7 @@ title: "Social-Ecological Systems"
 date: 2025-09-17
 draft: false
 layout: "topic"
-hero: 
+hero: /images/reg_ag.png
 ---
 
 ## What are Social-Ecological Systems?

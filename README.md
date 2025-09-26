@@ -34,7 +34,7 @@ hugo server
 - **[LPJmL](https://github.com/pik-lpjml/LPJmL/)** - Dynamic global vegetation model
 
 ## Contact
-- **Email**: [copanlpjml@pik-potsdam.de](mailto:copanlpjml@pik-potsdam.de)
+- **Email**: [breier@pik-potsdam.de](mailto:breier@pik-potsdam.de)
 - **GitHub**: [pik-copan/pycopanlpjml](https://github.com/pik-copan/pycopanlpjml)
 
 ## Acknowledgements

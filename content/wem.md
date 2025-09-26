@@ -3,7 +3,7 @@ title: "World-Earth Models"
 date: 2025-09-17
 draft: false
 layout: "topic"
-hero: /images/DominoES_concept_figure_2022.png
+hero: /images/DominoES.png
 ---
 
 ## What are World-Earth Models?

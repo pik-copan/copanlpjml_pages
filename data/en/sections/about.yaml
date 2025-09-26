@@ -17,8 +17,8 @@ summary: |
       copan:LPJmL is a new Python-based World-Earth modeling framework for
       dynamic land use and agricultural management.
       <br><br>
-      It extends copan:CORE by integrating LPJmL as the Earth system interface for
-      comprehensive social-ecological simulations.
+      It extends copan:CORE by integrating LPJmL as the terrestrial Earth system
+      interface for comprehensive social-ecological simulations.
       <br><br>
       copan:CORE serves as the basic framework, standardizing the Earth
       interface and making it flexible and modular in representing various
@@ -52,7 +52,7 @@ summary: |
 socialLinks:
   - name: Email
     icon: "fas fa-envelope"
-    url: "copanlpjml@pik-potsdam.de"
+    url: "breier@pik-potsdam.de"
 
   - name: GitHub
     icon: "fab fa-github"

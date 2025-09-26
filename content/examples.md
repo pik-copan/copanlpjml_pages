@@ -3,7 +3,7 @@ title: "Examples & Use Cases"
 date: 2025-09-17
 draft: false
 layout: "topic"
-hero: /images/copan_lpjml_overview_small.svg
+hero: /images/copan_lpjml_examples.png
 ---
 
 ## Explore copan:LPJmL Applications

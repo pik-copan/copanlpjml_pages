@@ -268,10 +268,10 @@ $themes: (
   color: get-light-color('accent-color') !important;
 }
 
-/* Force all SVG elements to use PIK orange */
+/* Force all SVG elements to use PIK orange - fill only, no stroke */
 .hero-icon-primary svg * {
   fill: get-light-color('accent-color') !important;
-  stroke: get-light-color('accent-color') !important;
+  stroke: none !important;
 }
 
 /* Specific targeting for common SVG elements */
@@ -284,7 +284,7 @@ $themes: (
 .hero-icon-primary svg line,
 .hero-icon-primary svg polyline {
   fill: get-light-color('accent-color') !important;
-  stroke: get-light-color('accent-color') !important;
+  stroke: none !important;
 }
 
 /* Button */

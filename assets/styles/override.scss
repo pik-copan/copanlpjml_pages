@@ -265,7 +265,26 @@ $themes: (
 
 /* Icon colors */
 .hero-icon-primary {
-  color: get-light-color('accent-color');
+  color: get-light-color('accent-color') !important;
+}
+
+/* Force all SVG elements to use PIK orange */
+.hero-icon-primary svg * {
+  fill: get-light-color('accent-color') !important;
+  stroke: get-light-color('accent-color') !important;
+}
+
+/* Specific targeting for common SVG elements */
+.hero-icon-primary svg path,
+.hero-icon-primary svg g,
+.hero-icon-primary svg rect,
+.hero-icon-primary svg circle,
+.hero-icon-primary svg polygon,
+.hero-icon-primary svg ellipse,
+.hero-icon-primary svg line,
+.hero-icon-primary svg polyline {
+  fill: get-light-color('accent-color') !important;
+  stroke: get-light-color('accent-color') !important;
 }
 
 /* Button */
@@ -293,6 +312,26 @@ $themes: (
     fill: currentColor;
     max-width: none;         /* Prevent width from shrinking if too wide */
   }
+
+/* Fix text contrast issues - HIGH PRIORITY OVERRIDES */
+p, li, div, span {
+  color: #344643 !important; /* Use dark gray like headings for better readability */
+}
+
+strong, b, .font-weight-bold {
+  color: #e37222 !important; /* Use PIK orange for bold text */
+  font-weight: bold !important;
+}
+
+/* Ensure bullet points are also dark */
+ul li::marker, ol li::marker {
+  color: #344643 !important;
+}
+
+/* Override any theme text colors */
+.text-muted, .text-secondary {
+  color: #344643 !important;
+}
 
 /* Code block styling - override Hugo's inline styles */
 .highlight pre, pre {

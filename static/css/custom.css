@@ -148,3 +148,47 @@ pre > code {
   z-index: 1;
   pointer-events: none;
 }
+
+/* Fix text contrast issues */
+p, li, div {
+  color: #344643 !important; /* Use dark gray like headings for better readability */
+}
+
+strong, b {
+  color: #e37222 !important; /* Use PIK orange for bold text */
+  font-weight: bold;
+}
+
+/* Ensure bullet points are also dark */
+ul li::marker, ol li::marker {
+  color: #344643 !important;
+}
+
+/* Hero image styling - responsive float right */
+.hero-image {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  max-width: 40%;
+  height: auto;
+  max-height: 250px;
+}
+
+/* Style the header image to float right and be much smaller */
+h3 + p img {
+  float: right;
+  margin: -30px 0 1rem 1rem; /* Negative top margin to align with heading */
+  width: 180px; /* Fixed smaller width */
+  height: auto;
+  max-height: 120px; /* Much smaller max height */
+}
+
+/* Mobile responsive - stack the image on small screens */
+@media (max-width: 768px) {
+  h3 + p img {
+    float: none !important;
+    display: block;
+    margin: 1rem auto !important;
+    width: 80% !important;
+    max-width: 250px !important;
+  }
+}

@@ -6,71 +6,40 @@ layout: "topic"
 hero: /images/DominoES.png
 ---
 
-## What are World-Earth Models?
+## What is World-Earth Modeling (WEM)?
 
-World-Earth models (WEM) are integrated modeling frameworks that represent the Earth system as a complex, interconnected network of physical, biological, and human components. These models simulate the dynamic interactions between the atmosphere, hydrosphere, biosphere, and anthroposphere to understand global change processes and their consequences.
+**World-Earth Models (WEMs) connect human decisions with Earth system feedbacks.** Unlike traditional Earth System Models (ESMs), they model society and nature as **co-evolving** systems rather than treating humans as external drivers.
 
-## Key Characteristics
+**The key difference:** Traditional ESMs use fixed scenarios for human behavior, while WEMs simulate how human decisions actually change in response to environmental feedback - and how those changes then affect the environment again.
 
-- **Integrated**: Combines multiple Earth system components in a single modeling framework
-- **Global Scale**: Represents processes and interactions across the entire planet
-- **Multi-Component**: Incorporates atmospheric, oceanic, terrestrial, and human systems
-- **Dynamic**: Simulates time-evolving processes and feedback mechanisms
-- **Comprehensive**: Captures the full complexity of Earth system interactions
+## How WEMs Work
 
-## Why Study WEM?
+**Unlike ESMs, WEMs feature:**
+- **🔄 Bidirectional coupling**: Human decisions affect the environment, environmental changes influence human decisions
+- **👥 Dynamic human agency**: People adapt their behavior based on what they observe and learn
+- **📊 Closed feedback loops**: Environmental changes immediately influence future human behavior
+- **🌍 Global scale**: Simulates these dynamics across the entire planet simultaneously
 
-World-Earth models are essential for understanding and addressing global challenges:
+**This creates coevolutionary dynamics** where human societies and Earth system processes shape each other over time - something impossible with traditional modeling approaches.
 
-1. **Climate Change**
-   - Project future climate scenarios and impacts
-   - Understand carbon cycle dynamics and feedbacks
-   - Assess mitigation and adaptation strategies
+## The copan:LPJmL Framework
 
-2. **Biodiversity Loss**
-   - Model ecosystem responses to environmental change
-   - Predict species distribution shifts
-   - Evaluate conservation strategies
+**copan:LPJmL is the first practical framework for building WEMs** by combining detailed land system modeling (LPJmL) with flexible social modeling (copan:CORE).
 
-3. **Land Use Change**
-   - Simulate human land use decisions and impacts
-   - Assess agricultural and urban development effects
-   - Model deforestation and reforestation dynamics
+**Technical innovations that enable WEM development:**
+- **🔗 Annual coupling**: LPJmL and social processes exchange data every simulation year
+- **📊 Three taxon structure**: ENV (biophysical), MET (socio-metabolic), CUL (socio-cultural) processes
+- **🌍 Global grid integration**: Social agents operate on the same 0.5° × 0.5° grid as LPJmL (67,420 cells)
+- **⚡ Modular design**: Supports agent-based, rule-based, optimization, and AI-enhanced approaches
 
-4. **Resource Management**
-   - Understand water and energy system interactions
-   - Model food production and distribution
-   - Assess sustainability of resource use
+**See our [examples](/examples/) for three working WEM implementations** that demonstrate these capabilities in practice.
 
-## Modeling WEM with copan:LPJmL
+## Ready to Explore?
 
-copan:LPJmL provides a powerful framework for developing World-Earth models by:
+📚 **[Examples](/examples/)** - See WEMs in action  
+🔧 **[Documentation](https://copanlpjml.readthedocs.io/)** - Technical details  
+🤝 **[Community](https://github.com/pik-copan/pycopanlpjml)** - Join researchers
 
-- Integrating land surface processes with human decision-making
-- Simulating vegetation dynamics and carbon cycling
-- Modeling agricultural systems and food production
-- Exploring feedback between climate and land use
-- Testing policy interventions and management strategies
+---
 
-## Applications
-
-- **Climate Projections**: Develop scenarios for future climate conditions
-- **Ecosystem Services**: Assess nature's contributions to human well-being
-- **Food Security**: Model agricultural production under changing conditions
-- **Conservation Planning**: Identify priority areas for biodiversity protection
-- **Policy Analysis**: Evaluate the effectiveness of environmental policies
-
-## Getting Started
-
-To begin exploring World-Earth models with copan:LPJmL:
-
-1. Check out our [examples](/examples/)
-2. Learn about our [modeling approach](/features/)
-3. Explore our [documentation](https://copanlpjml.readthedocs.io/)
-4. Join our [community](https://github.com/pik-copan/pycopanlpjml)
-
-## Further Reading
-
-- [Earth System Models](https://www.ipcc.ch/reports/ar6/wg1/)
-- [Integrated Assessment Models](https://www.nature.com/articles/nclimate2572)
-- [Global Change Research](https://www.globalchange.gov/)
+*The first framework to truly connect human decisions with Earth system feedbacks - enabling breakthrough research into coevolutionary dynamics.*

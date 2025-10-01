@@ -6,69 +6,46 @@ layout: "topic"
 hero: /images/reg_ag.png
 ---
 
-## What are Social-Ecological Systems?
+## Why Study Social-Ecological Systems?
 
-Social-ecological systems (SES) are complex, integrated systems in which humans are part of nature. These systems emphasize that people, communities, economies, societies, and cultures are embedded in the biosphere and shape it, from local to global scales.
+**Regenerative agriculture, climate adaptation, food security, and nature's contributions to people** - these aren't separate challenges. They're **intertwined** in complex systems where human decisions and environmental processes constantly influence each other.
 
-## Key Characteristics
+## The Interconnected Challenges
 
-- **Interconnected**: Human and natural systems are deeply intertwined, with changes in one affecting the other
-- **Complex**: Multiple interactions and feedbacks create emergent behaviors
-- **Dynamic**: Systems change over time, often in non-linear and unexpected ways
-- **Multi-scale**: Processes occur and interact across different spatial and temporal scales
-- **Adaptive**: Systems can reorganize and evolve in response to change
+**🌱 Regenerative Agriculture**: How do farming practices spread through communities while improving soil health and biodiversity? Traditional models can't capture the social learning and environmental feedback that drive adoption.
 
-## Why Study SES?
+**🌡️ Climate Adaptation**: How do farmers actually adapt to changing weather patterns? Do they change planting dates, switch crops, or modify practices? How do these decisions affect regional food production?
 
-Understanding social-ecological systems is crucial for addressing global challenges:
+**🍽️ Food Security**: How do social networks, policy interventions, and environmental changes interact to create food security or vulnerability? What happens when climate shocks ripple through supply chains?
 
-1. **Climate Change**
-   - How societies adapt to and mitigate climate impacts
-   - Feedback between human activities and climate systems
+**🌿 Nature's Contributions**: How do human decisions about land use affect the ecosystem services that support human well-being? How do changes in nature's contributions influence human behavior?
 
-2. **Food Security**
-   - Agricultural practices and ecosystem services
-   - Food production and distribution networks
-   - Social and economic factors affecting food access
+## Why Traditional Approaches Fail
 
-3. **Biodiversity**
-   - Human impacts on species and habitats
-   - Conservation strategies and community involvement
-   - Nature's contributions to people
+**The problem:** Most research treats these as separate issues. But in reality:
+- **Agricultural practices** spread through social networks while changing soil health
+- **Climate adaptation** strategies interact with social learning and policy responses  
+- **Food security** depends on how communities respond to environmental shocks
+- **Nature's contributions** change as humans modify land use, which changes human decisions
 
-4. **Resource Management**
-   - Sustainable use of natural resources
-   - Community-based management systems
-   - Traditional ecological knowledge
+**copan:LPJmL is the first framework that captures these intertwined dynamics on a planetary scale** by simulating how human decisions and environmental processes actually coevolve over time.
 
-## Modeling SES with copan:LPJmL
+## How copan:LPJmL Helps
 
-copan:LPJmL provides a powerful framework for studying social-ecological systems by:
+**Real examples from our research:**
+- **Conservation tillage** spreads through social networks while improving soil carbon and crop yields
+- **Climate adaptation** happens in real-time as farmers adjust planting dates without pre-computed scenarios  
+- **AI-enhanced decision making** shows how complex human reasoning affects agricultural outcomes
 
-- Integrating human decision-making with biophysical processes
-- Simulating land-use changes and their impacts
-- Exploring feedback between social and ecological components
-- Testing management strategies and policy interventions
-- Analyzing system resilience and tipping points
+**See our [examples](/examples/) for detailed implementations, or learn about the [technical framework](/wem/) that makes this research possible.**
 
-## Applications
+## Ready to Explore?
 
-- **Regenerative Agriculture**: Study how farming practices affect both ecosystem health and human well-being
-- **Climate Adaptation**: Explore how communities can adapt to changing environmental conditions
-- **Food Systems**: Analyze the sustainability and resilience of food production systems
-- **Ecosystem Services**: Assess how natural systems support human societies and economies
+📚 **[World-Earth Models](/wem/)** - Technical framework details  
+🔧 **[Examples](/examples/)** - Working implementations  
+📖 **[Documentation](https://copanlpjml.readthedocs.io/)** - Get started  
+🤝 **[Community](https://github.com/pik-copan/pycopanlpjml)** - Join researchers
 
-## Getting Started
+---
 
-To begin exploring social-ecological systems with copan:LPJmL:
-
-1. Check out our [examples](/topics/examples/)
-2. Learn about our [modeling approach](/features/)
-3. Explore our [documentation](https://copanlpjml.readthedocs.io/)
-4. Join our [community](https://github.com/pik-copan/pycopanlpjml)
-
-## Further Reading
-
-- [Resilience Alliance](https://www.resalliance.org/)
-- [Stockholm Resilience Centre](https://www.stockholmresilience.org/)
-- [PNAS Sustainability Science](https://www.pnas.org/topic/sustainability-science)
+*Understanding intertwined challenges requires modeling how humans and ecosystems truly coevolve together.*

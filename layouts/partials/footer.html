@@ -166,6 +166,24 @@
         {{ end }}
       </div>
       
+      <!-- Funding Acknowledgments Section -->
+      <div class="row text-left mt-4">
+        <div class="col-12">
+          <hr class="my-3" style="border-color: rgba(255,255,255,0.1);">
+          <div class="text-center">
+            <h6 class="text-muted mb-3">Acknowledgments</h6>
+            <p class="text-muted small mb-2">
+              We acknowledge financial support from the 
+              <strong>Carl-Zeiss Stiftung</strong>, 
+              the <strong>Earth4All</strong> Initiative (Generation Foundation, Global Challenges Foundation, Partners for a New Economy), 
+              and the European Union's Horizon 2.5 - Climate Energy and Mobility programme under grant agreement No 10108166, project <strong>WorldTrans</strong>.
+              <br>
+              We also like to thank the <a href="https://finam.pages.ufz.de/" target="_blank" rel="noopener" style="color: #e37222; text-decoration: none;">FINAM project</a> for inspiration in developing this website.
+            </p>
+          </div>
+        </div>
+      </div>
+      
       <!-- Legal Section -->
       {{ $legalMenus := (index site.Data site.Language.Lang).site.legalMenus }}
       {{ if $legalMenus }}

@@ -23,7 +23,7 @@ natural processes in direct interaction with humans and societies described in
 [Schwarz et al., 2025](https://doi.org/10.5194/egusphere-2025-4079).  
 Its focus: **exploring regenerative future pathways for food systems and beyond.**  
 
-Unlike Integrated Assessment Models (IAMs), InSEEDS combines:  
+Unlike traditional Integrated Assessment Models (IAMs), InSEEDS combines:  
 ✨ **Detailed biosphere processes** (e.g. nitrogen fixation, tillage practices)  
 🤝 **Active human or AI agents**, representing real-world decisions and behaviours  
 
@@ -32,9 +32,8 @@ This unique integration opens up new research on **social tipping, resilience, a
 <details>
   <summary>📖 Read more</summary>
 
-In contrast to existing modelling approaches, such as Integrated Assessment
-Models (IAMs), InSEEDS integrates a process-detailed representation of the
-terrestrial biosphere.  
+In contrast to existing modelling approaches, such as traditional IAMs, InSEEDS integrates a process-detailed representation of the
+terrestrial biosphere.
 This enables it to simulate specific mechanisms like biological nitrogen
 fixation or assess regenerative farming practices that have never before been
 explored at a global scale.  
@@ -49,27 +48,28 @@ behaviour in unprecedented detail.
 
 ## 🌱 Need for Regenerative Pathways  
 
-The global food system is at a crossroads:  
+Our planet faces unprecedented Earth system destabilization through the transgression of multiple planetary boundaries. Agriculture is both a major driver of this crisis and increasingly vulnerable to its consequences:
+
+**🚨 Current Crisis:**  
 ⚠️ **25%** of GHG emissions stem from agriculture  
 ⚠️ Land degradation drives biodiversity loss  
-⚠️ Feeding 10 billion people by 2050 requires **behavioural changes** ([Gerten et al., 2020](https://doi.org/10.1038/s41893-019-0465-1))  
+⚠️ Freshwater use and biogeochemical flows exceed safe limits  
+⚠️ Feeding 10 billion people by 2050 requires **fundamental transformations** ([Gerten et al., 2020](https://doi.org/10.1038/s41893-019-0465-1))  
 
-🌍 Regenerative practices offer a way forward:  
+**🌍 Regenerative agriculture as part of the great turnaround:**  
 ✅ Climate resilience & yield stability ([WEF, 2024](https://www.weforum.org/stories/2024/11/regenerative-agriculture-climate-solutions-resilient/))  
-✅ Soil as a carbon sink  
-✅ Enhanced water retention & biodiversity ([Schreefel et al., 2020](https://doi.org/10.1016/j.gfs.2020.100404))  
+✅ Soil as a carbon sink - helping return within planetary boundaries 
+✅ Enhanced water retention & biodiversity restoration ([Schreefel et al., 2020](https://doi.org/10.1016/j.gfs.2020.100404))  
+✅ **Multi-benefit solutions** that address multiple planetary boundaries simultaneously ([Rockström et al., 2024](https://www.nature.com/articles/s43017-024-00597-z))  
 
 <details>
   <summary>📖 Read more</summary>
 
-Food systems today contribute roughly one-quarter of global greenhouse gas
-emissions, while also driving eutrophication and biodiversity loss.  
-At the same time, the transformation of food systems represents a major economic
-and ecological opportunity
-([WEF, 2024](https://www.weforum.org/stories/2024/11/regenerative-agriculture-climate-solutions-resilient/)).  
+The transgression of multiple planetary boundaries represents a fundamental challenge to Earth system stability ([Rockström et al., 2024](https://www.nature.com/articles/s43017-024-00597-z)). Agriculture is a key driver across several boundaries: climate change (25% of GHG emissions), land-system change, freshwater use, biogeochemical flows (nitrogen/phosphorus), and biosphere integrity (biodiversity loss).
 
-Regenerative practices not only provide resilience and stability but also deliver multiple benefits: creating carbon sinks by rebuilding soils, increasing water retention, and enhancing biodiversity through nature-based solutions ([Schreefel et al., 2020](https://doi.org/10.1016/j.gfs.2020.100404)).  
-Researching both the potential and realistic pathways for these transformations is critical for success.  
+Regenerative agriculture offers a "great turnaround" by addressing multiple planetary boundaries simultaneously: creating carbon sinks through soil restoration, reducing water consumption, minimizing chemical inputs, and enhancing biodiversity ([Rockström et al., 2024](https://www.nature.com/articles/s43017-024-00597-z)). This multi-benefit approach is essential for achieving the transformations needed to feed 10 billion people while returning within safe planetary boundaries.
+
+Researching both the potential and realistic pathways for these transformations is critical for success. InSEEDS provides the tools to simulate and understand these complex social-ecological dynamics.
 
 </details>  
 <br/>
@@ -137,6 +137,7 @@ We are looking for:
 
 - Donges, J. F. et al. (2017). *Closing the loop: Reconnecting human dynamics to Earth System science.* The Anthropocene Review, 4(2), 151-157. https://doi.org/10.1177/2053019617725537  
 - Gerten, D., et al. (2020). *Feeding ten billion people is possible within four terrestrial planetary boundaries.* Nature Sustainability, 3(3), 200-208. https://doi.org/10.1038/s41893-019-0465-1  
+- Rockström, J., Donges, J. F., Fetzer, I., Martin, M. A., Wang-Erlandsson, L., & Richardson, K. (2024). *Planetary Boundaries guide humanity's future on Earth.* Nature Reviews Earth & Environment, 5, 773-788. https://doi.org/10.1038/s43017-024-00597-z  
 - Schreefel, L., et al. (2020). *Regenerative agriculture – the soil is the base.* Global Food Security, 26, 100404. https://doi.org/10.1016/j.gfs.2020.100404  
-- WEF (2024). *Regenerative agriculture: Climate solutions for resilient food systems.* World Economic Forum. https://www.weforum.org/stories/2024/11/regenerative-agriculture-climate-solutions-resilient/  
 - Schwarz, L., Breier, J. et al. (2025). *From Farm to Planet: The InSEEDS World-Earth Model for Simulating Transitions to Regenerative Agriculture.* EGUsphere [preprint]. https://doi.org/10.5194/egusphere-2025-4079  
+- WEF (2024). *Regenerative agriculture: Climate solutions for resilient food systems.* World Economic Forum. https://www.weforum.org/stories/2024/11/regenerative-agriculture-climate-solutions-resilient/  

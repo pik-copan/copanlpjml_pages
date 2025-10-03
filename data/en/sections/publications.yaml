@@ -19,15 +19,68 @@ section:
 
 # your publications
 publications:
-  - title: Coming soon...
+  - title: "From Farm to Planet: The InSEEDS World-Earth Model for Simulating Transitions to Regenerative Agriculture"
+    publishedIn:
+      name: EGUsphere (preprint)
+      date: 30 September 2025
+      url: https://doi.org/10.5194/egusphere-2025-4079
+    authors:
+      - name: Luana Schwarz
+      - name: Jannes Breier
+      - name: Hannah Prawitz
+      - name: Max Bechthold
+      - name: Werner von Bloh
+      - name: Sara M. Constantino
+      - name: Dieter Gerten
+      - name: Jobst Heitzig
+      - name: Ronja Hotz
+      - name: Leander John
+      - name: Christoph Müller
+      - name: Johan Rockström
+      - name: Jonathan F. Donges
+    paper:
+      summary: "Industrialised agriculture has contributed to ecological degradation and planetary boundary transgressions, while being increasingly affected by climate change. Sustainable approaches like Regenerative Agriculture offer promising alternatives, but most studies overlook the complex social-ecological dynamics underlying large-scale adoption. To address this gap, we introduce InSEEDS – a novel World-Earth model that couples LPJmL vegetation modeling with agent-based farmer decision-making. Distinguishing between traditionalist and pioneer farmer types, we analyze conservation tillage adoption dynamics and find that social networks and ecological heterogeneity play critical roles in transitions. Conservation tillage yields positive effects on soil carbon and crop yield, though outcomes are context-dependent."
+      url: https://doi.org/10.5194/egusphere-2025-4079
+    categories: ["inseeds", "framework"]
+    tags: ["inseeds", "world-earth-model", "regenerative-agriculture", "agent-based-model", "lpjml"]
+  - title: "Earth system modeling with endogenous and dynamic human societies: the copan:CORE open World–Earth modeling framework"
     publishedIn:
       name: Earth System Dynamics
-      date: 31 December 2025
-      url: https://example.com
+      date: 04 May 2020
+      url: https://doi.org/10.5194/esd-11-395-2020
     authors:
-      - name: InSEEDS team
+      - name: Jonathan F. Donges
+      - name: Jobst Heitzig
+      - name: Wolfram Barfuss
+      - name: Marc Wiedermann
+      - name: Johannes A. Kassel
+      - name: Tim Kittel
+      - name: Jakob J. Kolb
+      - name: Till Kolster
+      - name: Finn Müller-Hansen
+      - name: Ilona M. Otto
+      - name: Kilian B. Zimmerer
+      - name: Wolfgang Lucht
     paper:
-      summary: Abstract of the paper...
-      url: https://example.com
+      summary: "We present an open-source software framework for developing so-called world–Earth models that link physical, chemical and biological processes with social, economic and cultural processes to study the Earth system's future trajectories in the Anthropocene. Due to its modular structure, the software allows interdisciplinary studies of global change and sustainable development that combine stylized model components from Earth system science, climatology, economics, ecology and sociology."
+      url: https://doi.org/10.5194/esd-11-395-2020
     categories: ["framework"]
-    tags: ["pycopanlpjml", "technical", "design"]
+    tags: ["copan-core", "world-earth-model", "framework", "open-source", "anthropocene"]
+  - title: "Taxonomies for structuring models for World–Earth systems analysis of the Anthropocene: subsystems, their interactions and social–ecological feedback loops"
+    publishedIn:
+      name: Earth System Dynamics
+      date: 12 November 2021
+      url: https://doi.org/10.5194/esd-12-1115-2021
+    authors:
+      - name: Jonathan F. Donges
+      - name: Wolfgang Lucht
+      - name: Sarah E. Cornell
+      - name: Jobst Heitzig
+      - name: Wolfram Barfuss
+      - name: Steven J. Lade
+      - name: Maja Schlüter
+    paper:
+      summary: "In the Anthropocene, the social dynamics of human societies have become critical to understanding planetary-scale Earth system dynamics. The conceptual foundations of Earth system modelling have externalised social processes in ways that now hinder progress in understanding Earth resilience and informing governance of global environmental change. New approaches to global modelling of the human World are needed to address these challenges. We present taxonomies for structuring models for World–Earth systems analysis that enable the systematic development of models capable of simulating complex and entangled human–Earth system processes."
+      url: https://doi.org/10.5194/esd-12-1115-2021
+    categories: ["framework"]
+    tags: ["taxonomies", "world-earth-model", "anthropocene", "social-ecological-systems", "framework"]

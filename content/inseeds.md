@@ -1,5 +1,5 @@
 ---
-title: "@EAT Stockholm Food Forum 2025"
+title: "@EGU2026 in Vienna"
 date: 2025-01-17
 draft: false
 layout: "topic"
